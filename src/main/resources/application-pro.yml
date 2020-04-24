@@ -1,0 +1,25 @@
+spring:
+  # mysql 数据库配置
+  datasource:
+    url: jdbc:mysql://47.96.153.185:3306/db_blog?serverTimezone=Asia/Shanghai&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: lyq@qq.com
+    hikari:
+      minimum-idle: 10
+      maximum-pool-size: 60
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+  #  redis相关配置
+  redis:
+    host: 47.96.153.185
+    port: 6379
+    jedis:
+      pool:
+        max-active: 100
+        max-wait: PT10s
+        max-idle: 30
+        min-idle: 1
+      lettuce:
+        shutdown-timeout: PT10s

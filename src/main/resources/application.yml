@@ -1,0 +1,30 @@
+server:
+  port: 8080
+# mybatis配置
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true  # 开启驼峰命名法
+  global-config:
+    db-config:
+      logic-delete-value: 1 # 逻辑已删除值
+      logic-not-delete-value: 0 # 逻辑未删除值
+  #      logic-delete-field: delFlag  #全局逻辑删除
+  mapper-locations: classpath:mapper/*.xml # 映射文件位置
+  type-aliases-package: com.lyq.blog.entity
+# jwt密钥
+jwt:
+  secretKey: 0007513518f26e45d314d2b1c4fb693e # md5加密密钥
+  accessTokenExpireTime: PT2H # token过期时间  2小时
+  refreshTokenExpireTime: PT8H # 刷新token过期时间 pc 8小时后刷新
+  refreshTokenExpireAppTime: PT8H # 刷新token过期时间 app 8小时后刷新
+  issuer: fc7ef921303109315fba65e2efe0c549# # md5加密 签发人
+# spring 相关配置
+spring:
+  profiles:
+    active: dev
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    # 处理 jackson 返回的null值 不显示出来 只显示不为null的
+    default-property-inclusion: non_null
