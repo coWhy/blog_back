@@ -78,6 +78,9 @@ public class ShiroConfig {
 
         // 配置不会被拦截的链接 顺序判断
         filterChainDefinitionMap.put("/api/user/login", "anon");
+        filterChainDefinitionMap.put("/api/user/register", "anon");
+        filterChainDefinitionMap.put("/api/user/token", "anon");
+
         filterChainDefinitionMap.put("/api/test", "anon");
 
         filterChainDefinitionMap.put("/**", "token,authc");

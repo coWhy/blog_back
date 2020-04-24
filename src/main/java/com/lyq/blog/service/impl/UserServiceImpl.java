@@ -2,16 +2,20 @@ package com.lyq.blog.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.lyq.blog.constants.Constant;
 import com.lyq.blog.constants.StateEnums;
 import com.lyq.blog.exception.BusinessException;
 import com.lyq.blog.service.RedisService;
 import com.lyq.blog.utils.idworker.IdWorker;
 import com.lyq.blog.utils.jwt.JwtTokenUtil;
+import com.lyq.blog.utils.jwt.TokenSettings;
 import com.lyq.blog.utils.password.PasswordUtils;
 import com.lyq.blog.utils.result.code.ResponseCode;
 import com.lyq.blog.vo.req.UserAddReqVo;
 import com.lyq.blog.vo.req.UserLoginReqVo;
+import com.lyq.blog.vo.req.UserPageReqVo;
+import com.lyq.blog.vo.req.UserRegisterReqVo;
 import com.lyq.blog.vo.resp.UserLoginRespVo;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.SecurityUtils;
@@ -44,6 +48,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     @Autowired
     private RedisService redisService;
     @Autowired
+    private TokenSettings tokenSettings;
+    @Autowired
     private IdWorker idWorker;
 
     /**
@@ -71,7 +77,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
      * 但是现在是无状态 就是服务器端不保存 那就得反过来当他注销的时候我们才会标记起来
      * 因为token设置了有效期对 那肯定设计到自动刷新的功能
      * 保存在前端本地 或者cookie都可以
-     *
+     * <p>
      * 刷新token的作用是 : 当前端存入的accessToken过期了之后 前端传入refreshToken来进行token的刷新
      * 因为刷新token和访问token的最大区别就是过期时间不一样 所以只能用哪刷新token去刷新
      *
@@ -187,5 +193,121 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         // 也就是redis中 (key,value)
         redisService.set(Constant.JWT_REFRESH_TOKEN_BLACKLIST + refreshToken, userId,
                 JwtTokenUtil.getRemainingTime(refreshToken), TimeUnit.MILLISECONDS);
+    }
+
+    /**
+     * 用户分页模糊条件查询接口
+     *
+     * @param vo UserPageReqVo
+     * @return Page<User>
+     */
+    @Override
+    public Page<User> getUsersByPage(UserPageReqVo vo) {
+        Page<User> userPage = userMapper.selectPage(new Page<User>(vo.getPageNum(), vo.getPageSize()), new QueryWrapper<User>()
+                .select("user_id", "user_name", "nick_name", "avatar", "sex", "phone", "email", "create_at", "create_by")
+                .like(StringUtils.isNotBlank(vo.getUserName()), "user_name", vo.getUserName())
+                .like(StringUtils.isNotBlank(vo.getPhone()), "phone", vo.getPhone())
+                .like(StringUtils.isNotBlank(vo.getEmail()), "email", vo.getEmail())
+                .eq("is_admin", StateEnums.USER.getCode())
+                .eq("deleted", StateEnums.NOT_DELETED.getCode())
+        );
+        if (userPage == null) {
+            throw new BusinessException(ResponseCode.QUERY_DATA_ERROR);
+        }
+        return userPage;
+    }
+
+    /**
+     * 新用户注册
+     *
+     * @param vo UserRegisterReqVo
+     */
+    @Override
+    public void registerUser(UserRegisterReqVo vo) {
+        // 由于目前注册 和 新增用户的vo字段一样 所以 就直接用 倘若想更改 可以自行更改
+        UserAddReqVo addReqVo = new UserAddReqVo();
+        BeanUtils.copyProperties(vo, addReqVo);
+        addUser(addReqVo);
+    }
+
+    /**
+     * 根据id 删除用户 接口
+     *
+     * @param id 用户id
+     */
+    @Override
+    public void delUserById(String id) {
+        // 先确定删除的对象是不是管理员 管理员是不能删除的
+        User user = userMapper.selectOne(new QueryWrapper<User>()
+                .select("is_admin")
+                .eq("user_id", id)
+                .eq("deleted", StateEnums.NOT_DELETED.getCode())
+        );
+        if (user == null) {
+            throw new BusinessException(ResponseCode.USELESS_OPERATION);
+        }
+        if (user.getIsAdmin().equals(StateEnums.ADMIN.getCode())) {
+            throw new BusinessException(ResponseCode.NOT_DELETE_ADMIN);
+        }
+        userMapper.deleteById(id);
+        // 如果当前的用户 还处于在线状态 就靠此操作 让shiro进行拦截 让该用户立即注销登录 具体 看 CusHashedCredentialMatcher 用户认证匹配里面的逻辑
+        // 存入redis 删除key
+        redisService.set(Constant.DELETED_USER_KEY + id, id,
+                tokenSettings.getRefreshTokenExpireAppTime().toMillis(),
+                TimeUnit.MILLISECONDS);
+    }
+
+    /**
+     * jwt刷新token 接口
+     *
+     * @param refreshToken String 刷新token
+     * @return String jwt token
+     */
+    @Override
+    public String refreshToken(String refreshToken) {
+        if (StringUtils.isBlank(refreshToken)) {
+            throw new BusinessException(ResponseCode.DATA_INCOMING_ERROR);
+        }
+        //首先先判断这个刷新token是否过期  是否已经存入redis的黑名单key里面了这里 CusHashedCredentialMatcher 里面也有相关的shiro认证匹配拦截的逻辑
+        if (!JwtTokenUtil.validateToken(refreshToken) || redisService.hasKey(Constant.JWT_REFRESH_KEY + refreshToken)) {
+            throw new BusinessException(ResponseCode.TOKEN_ERROR);
+        }
+        // 假如刷新token是正常的 我们就来取出userId 因为登录的时候  放入了两个token 这个刷新token 和 访问token 没有 什么区别 只是 过期时间不一样
+        // 所以可以取出userId
+        String userId = JwtTokenUtil.getUserId(refreshToken);
+        log.info("当前刷新用户id:{}", userId);
+        Map<String, Object> claims = null;
+        if (redisService.hasKey(Constant.JWT_REFRESH_KEY + userId)) {
+            claims = new HashMap<>(2);
+            User refreshUser = userMapper.selectOne(new QueryWrapper<User>()
+                    .select("user_id", "user_name", "is_admin")
+                    .eq("user_id", userId)
+                    .eq("deleted", StateEnums.NOT_DELETED.getCode())
+            );
+            //重新存入账号信息 userName 和 权限信息 isAdmin
+            claims.put(Constant.JWT_USER_NAME, refreshUser.getUserName());
+            claims.put(Constant.JWT_IS_ADMIN, refreshUser.getIsAdmin());
+        }
+        // 返回 重新生成的accessToken
+        return JwtTokenUtil.refreshToken(refreshToken, claims);
+    }
+
+    /**
+     * 批量重置用户密码
+     *
+     * @param ids List<String>
+     */
+    @Override
+    public void batchResetUserPwd(List<String> ids) {
+        List<User> userList = userMapper.selectBatchIds(ids);
+        if (userList.isEmpty()) {
+            throw new BusinessException(ResponseCode.DATA_INCOMING_ERROR);
+        }
+        userList.forEach(user -> {
+            String newPassword = PasswordUtils.encode(Constant.USER_RESET_PWD, user.getSalt());
+            user.setPassword(newPassword);
+            user.setVersion(user.getVersion());
+            userMapper.updateById(user);
+        });
     }
 }

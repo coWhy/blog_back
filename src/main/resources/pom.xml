@@ -46,7 +46,7 @@
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.3.1</version>
+            <version>3.3.1.tmp</version>
         </dependency>
         <!--将对象转换为json的工具类 fastjson-->
         <dependency>

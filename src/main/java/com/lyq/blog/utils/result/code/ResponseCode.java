@@ -28,6 +28,7 @@ public enum ResponseCode implements ResponseCodeInterface {
     QUERY_SUCCESS(0, "查询成功"),
     RESET_PWD_SUCCESS(0, "重置密码成功"),
     MODIFY_PWD_SUCCESS(0, "修改密码成功"),
+    REFRESH_TOKEN_SUCCESS(0, "刷新token成功"),
     SYSTEM_ERROR(5000001, "系统异常请稍后再试"),
     DATA_INCOMING_ERROR(4000001, "数据传入异常"),
     DATA_CHECK_ANOMALY(4000002, "数据校验异常"),
@@ -42,7 +43,7 @@ public enum ResponseCode implements ResponseCodeInterface {
     ACCOUNT_IS_NOT_ADMIN(4010001, "该用户不是管理员,没有权限访问该资源"),
     NOT_DELETE_ADMIN(4010001, "管理员不能删除"),
     ACCOUNT_HAS_NOT_PERMISSIONS(4010001, "您不是管理员,不能访问该资源"),
-
+    USELESS_OPERATION(4010001, "当前操作对象不存在"),
 
     TOKEN_PAST_DUE(4010002, "token失效，请刷新token"),
     OPERATION_ERROR(4000005, "操作失败"),
@@ -62,6 +63,8 @@ public enum ResponseCode implements ResponseCodeInterface {
      */
     ACCOUNT_HAS_BEEN_REGISTERD(2300000, "用户名已存在,请换一个试试"),
     ;
+
+
     private int code;
 
     private String msg;

@@ -1,5 +1,10 @@
 package com.lyq.blog.vo.req;
 
+import lombok.Data;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
 /**
  * 新用户注册
  *
@@ -7,5 +12,24 @@ package com.lyq.blog.vo.req;
  * @Date: 2020/4/24 3:10 上午
  * @Version: 1.0.0
  */
+@Data
 public class UserRegisterReqVo {
+    @NotBlank(message = "用户名不能为空")
+    private String userName;
+
+    @NotBlank(message = "登录密码不能为空")
+    private String password;
+
+    @NotNull(message = "性别不能为空")
+    private Integer sex;
+    /**
+     * 昵称
+     */
+    private String nickName;
+
+    @NotBlank(message = "手机号码不能为空")
+    private String phone;
+
+    @NotBlank(message = "邮箱地址不能为空")
+    private String email;
 }

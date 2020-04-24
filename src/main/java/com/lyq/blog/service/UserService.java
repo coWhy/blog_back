@@ -1,10 +1,15 @@
 package com.lyq.blog.service;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.lyq.blog.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.lyq.blog.vo.req.UserAddReqVo;
 import com.lyq.blog.vo.req.UserLoginReqVo;
+import com.lyq.blog.vo.req.UserPageReqVo;
+import com.lyq.blog.vo.req.UserRegisterReqVo;
 import com.lyq.blog.vo.resp.UserLoginRespVo;
+
+import java.util.List;
 
 /**
  * @Author: 林义清
@@ -44,4 +49,42 @@ public interface UserService extends IService<User> {
      * @param refreshToken 刷新token
      */
     void logout(String accessToken, String refreshToken);
+
+    /**
+     * 用户分页模糊条件查询接口
+     *
+     * @param vo UserPageReqVo
+     * @return Page<User>
+     */
+    Page<User> getUsersByPage(UserPageReqVo vo);
+
+    /**
+     * 新用户注册
+     *
+     * @param vo UserRegisterReqVo
+     */
+    void registerUser(UserRegisterReqVo vo);
+
+    /**
+     * 根据id 删除用户 接口
+     *
+     * @param id 用户id
+     */
+    void delUserById(String id);
+
+    /**
+     * jwt刷新token 接口
+     *
+     * @param refreshToken String 刷新token
+     * @return String jwt token
+     */
+    String refreshToken(String refreshToken);
+
+    /**
+     * 批量重置用户密码
+     *
+     * @param ids List<String>
+     */
+    void batchResetUserPwd(List<String> ids);
+
 }

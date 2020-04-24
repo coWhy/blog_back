@@ -38,6 +38,8 @@ public class Constant {
      */
     public static final String DELETED_USER_KEY = "deleted_user_key_";
     public static final String JWT_REFRESH_KEY = "jwt_refresh_key_";
-
-//    public static final String USER_REGISTER_URI = "/api/user/register";
+    /**
+     * 用户重置密码
+     */
+    public static final String USER_RESET_PWD = "123456";
 }
