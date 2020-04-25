@@ -168,10 +168,8 @@ public class UserController {
      * @return
      */
     @PutMapping("/user")
-    public CommonResult<Object> updateUser(@RequestBody @Valid UserUpdateReqVo vo) {
-        /**
-         * TOOD
-         */
+    public CommonResult<Object> updateUserSelfInfo(@RequestBody @Valid UserUpdateReqVo vo) {
+        userService.updateUserSelfInfo(vo);
         CommonResult result = new CommonResult();
         result.setMsg(ResponseCode.UPDATE_SUCCESS.getMsg());
         return result;

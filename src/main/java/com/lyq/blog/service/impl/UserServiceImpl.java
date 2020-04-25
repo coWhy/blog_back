@@ -12,10 +12,7 @@ import com.lyq.blog.utils.jwt.JwtTokenUtil;
 import com.lyq.blog.utils.jwt.TokenSettings;
 import com.lyq.blog.utils.password.PasswordUtils;
 import com.lyq.blog.utils.result.code.ResponseCode;
-import com.lyq.blog.vo.req.UserAddReqVo;
-import com.lyq.blog.vo.req.UserLoginReqVo;
-import com.lyq.blog.vo.req.UserPageReqVo;
-import com.lyq.blog.vo.req.UserRegisterReqVo;
+import com.lyq.blog.vo.req.*;
 import com.lyq.blog.vo.resp.UserLoginRespVo;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.SecurityUtils;
@@ -307,7 +304,37 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
             String newPassword = PasswordUtils.encode(Constant.USER_RESET_PWD, user.getSalt());
             user.setPassword(newPassword);
             user.setVersion(user.getVersion());
-            userMapper.updateById(user);
+            // 假如更新失败 就抛出错误信息
+            if (!updateById(user)) {
+                throw new BusinessException(ResponseCode.SYSTEM_ERROR);
+            }
+
         });
+    }
+
+    /**
+     * 用户更新个人信息接口
+     *
+     * @param vo UserUpdateReqVo
+     */
+    @Override
+    public void updateUserSelfInfo(UserUpdateReqVo vo) {
+        //先查询后再进行更新
+        User user = getOne(new QueryWrapper<User>()
+                .select("version")
+                .eq("user_id", vo.getUserId())
+                .eq("is_admin", StateEnums.USER.getCode())
+                .eq("deleted", StateEnums.NOT_DELETED.getCode())
+        );;
+        if (user == null) {
+            throw new BusinessException(ResponseCode.DATA_INCOMING_ERROR);
+        }
+        BeanUtils.copyProperties(vo, user);
+        user.setVersion(user.getVersion());
+        // 假如更新失败 就抛出错误信息
+        if (!updateById(user)) {
+            throw new BusinessException(ResponseCode.SYSTEM_ERROR);
+        }
+
     }
 }

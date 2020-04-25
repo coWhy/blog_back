@@ -21,11 +21,13 @@ public class UserAddReqVo {
     @NotBlank(message = "登录密码不能为空")
     private String password;
 
+    @NotBlank(message = "头像不能为空")
+    private String avatar;
+
     @NotNull(message = "性别不能为空")
     private Integer sex;
-    /**
-     * 昵称
-     */
+
+    @NotBlank(message = "昵称不能为空")
     private String nickName;
 
     @NotBlank(message = "手机号码不能为空")

@@ -3,10 +3,7 @@ package com.lyq.blog.service;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.lyq.blog.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.lyq.blog.vo.req.UserAddReqVo;
-import com.lyq.blog.vo.req.UserLoginReqVo;
-import com.lyq.blog.vo.req.UserPageReqVo;
-import com.lyq.blog.vo.req.UserRegisterReqVo;
+import com.lyq.blog.vo.req.*;
 import com.lyq.blog.vo.resp.UserLoginRespVo;
 
 import java.util.List;
@@ -86,5 +83,12 @@ public interface UserService extends IService<User> {
      * @param ids List<String>
      */
     void batchResetUserPwd(List<String> ids);
+
+    /**
+     * 用户更新个人信息接口
+     *
+     * @param vo UserUpdateReqVo
+     */
+    void updateUserSelfInfo(UserUpdateReqVo vo);
 
 }
