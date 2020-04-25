@@ -62,6 +62,7 @@ public enum ResponseCode implements ResponseCodeInterface {
      * 用户异常相关处理
      */
     ACCOUNT_HAS_BEEN_REGISTERD(2300000, "用户名已存在,请换一个试试"),
+    ACCOUNT_OLD_PWD_NOT_CORRECT(2300001, "旧密码不匹配"),
     ;
 
 

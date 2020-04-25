@@ -3303,3 +3303,1269 @@ com.lyq.blog.exception.BusinessException: token失效，请刷新token
 2020-04-25 15:54:41.924 INFO  [http-nio-8080-exec-6]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:116 -请求参数：[user_1253932172478296064]
 2020-04-25 15:54:41.930 INFO  [http-nio-8080-exec-6]com.lyq.blog.aop.aspect.LogAspect.doAround:64 -耗时 : 8
 2020-04-25 15:54:41.931 INFO  [http-nio-8080-exec-6]com.lyq.blog.aop.aspect.LogAspect.doAfterReturning:78 -返回值：{"code":0,"data":{"avatar":"rBCyTV6j1q2ASW0-AABhJqR63ls288.jpg","createAt":1587801251000,"createBy":"admin_1253409621264084992","email":"110@163.com","nickName":"傻逼的 世界 只有武藏明白","phone":"110","sex":1,"userId":"user_1253932172478296064","userName":"yyy","version":4},"msg":"查询成功"}
+2020-04-25 16:26:11.160 INFO  [SpringContextShutdownHook]o.s.jmx.export.annotation.AnnotationMBeanExporter.doUnregister:211 -Could not unregister MBean [com.github.tobato.fastdfs.domain.conn:name=fdfsConnectionPool,type=FdfsConnectionPool] as said MBean is not registered (perhaps already unregistered by an external process)
+2020-04-25 16:26:11.160 INFO  [SpringContextShutdownHook]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:218 -Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-25 16:26:11.161 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:350 -HikariPool-1 - Shutdown initiated...
+2020-04-25 16:26:11.169 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:352 -HikariPool-1 - Shutdown completed.
+2020-04-25 16:48:42.068 INFO  [main]com.lyq.blog.BlogBackApplication.logStarting:55 -Starting BlogBackApplication on JaydeMacBook-Pro.local with PID 9024 (/Users/jay/Desktop/idea_codes/博客/后端v2/blog-back/target/classes started by jay in /Users/jay/Desktop/idea_codes/博客/后端v2/blog-back)
+2020-04-25 16:48:42.074 DEBUG [main]com.lyq.blog.BlogBackApplication.logStarting:56 -Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-25 16:48:42.075 INFO  [main]com.lyq.blog.BlogBackApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-04-25 16:48:42.668 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:249 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-25 16:48:42.669 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-04-25 16:48:42.697 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 18ms. Found 0 Redis repository interfaces.
+2020-04-25 16:48:42.972 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'shiroConfig' of type [com.lyq.blog.config.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$805f94ae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 16:48:43.366 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisConfig' of type [com.lyq.blog.config.redis.RedisConfig$$EnhancerBySpringCGLIB$$f74883c2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 16:48:43.388 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 16:48:43.398 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 16:48:43.487 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 16:48:43.631 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 16:48:43.739 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisTemplate' of type [org.springframework.data.redis.core.RedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 16:48:43.806 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisService' of type [com.lyq.blog.service.RedisService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 16:48:43.810 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'cusHashedCredentialMatcher' of type [com.lyq.blog.config.shiro.custom.CusHashedCredentialMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 16:48:43.815 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'cusAuthorizingRealm' of type [com.lyq.blog.config.shiro.custom.CusAuthorizingRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 16:48:43.830 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 16:48:43.853 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 16:48:44.132 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8080 (http)
+2020-04-25 16:48:44.139 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-25 16:48:44.140 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-04-25 16:48:44.141 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-25 16:48:44.211 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-04-25 16:48:44.211 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 2047 ms
+2020-04-25 16:48:45.089 INFO  [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:181 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-25 16:48:45.594 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2020-04-25 16:48:45.626 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-25 16:48:45.629 INFO  [main]com.lyq.blog.BlogBackApplication.logStarted:61 -Started BlogBackApplication in 4.149 seconds (JVM running for 4.813)
+2020-04-25 16:49:58.480 INFO  [http-nio-8080-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-25 16:49:58.481 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2020-04-25 16:49:58.493 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 12 ms
+2020-04-25 16:49:58.689 INFO  [http-nio-8080-exec-1]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:108 -请求地址 : /api/user/login
+2020-04-25 16:49:58.691 INFO  [http-nio-8080-exec-1]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:109 -请求方式 : POST
+2020-04-25 16:49:58.696 INFO  [http-nio-8080-exec-1]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:112 -IP : 0:0:0:0:0:0:0:1
+2020-04-25 16:49:58.698 INFO  [http-nio-8080-exec-1]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:114 -方法 : com.lyq.blog.controller.UserController.login
+2020-04-25 16:49:58.698 INFO  [http-nio-8080-exec-1]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:116 -请求参数：[UserLoginReqVo(userName=yyy, password=111222)]
+2020-04-25 16:49:58.787 INFO  [http-nio-8080-exec-1]com.zaxxer.hikari.HikariDataSource.getConnection:110 -HikariPool-1 - Starting...
+2020-04-25 16:49:59.036 INFO  [http-nio-8080-exec-1]com.zaxxer.hikari.HikariDataSource.getConnection:123 -HikariPool-1 - Start completed.
+2020-04-25 16:49:59.168 INFO  [http-nio-8080-exec-1]com.lyq.blog.aop.aspect.LogAspect.doAround:64 -耗时 : 479
+2020-04-25 16:49:59.268 INFO  [http-nio-8080-exec-1]com.lyq.blog.aop.aspect.LogAspect.doAfterReturning:78 -返回值：{"code":0,"data":{"accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJmYzdlZjkyMTMwMzEwOTMxNWZiYTY1ZTJlZmUwYzU0OSMiLCJqd3RfdXNlcl9uYW1lX2tleV8iOiJ5eXkiLCJzdWIiOiJ1c2VyXzEyNTM5MzIxNzI0NzgyOTYwNjQiLCJqd3RfaXNfYWRtaW5fIjowLCJleHAiOjE1ODc4MTE3OTksImlhdCI6MTU4NzgwNDU5OX0.6eDiSoef4FqtuhYlZMt5awP2eXAgiTwnRml4HyQOj84","isAdmin":0,"refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJmYzdlZjkyMTMwMzEwOTMxNWZiYTY1ZTJlZmUwYzU0OSMiLCJqd3RfdXNlcl9uYW1lX2tleV8iOiJ5eXkiLCJzdWIiOiJ1c2VyXzEyNTM5MzIxNzI0NzgyOTYwNjQiLCJqd3RfaXNfYWRtaW5fIjowLCJleHAiOjE1ODc4MzMzOTksImlhdCI6MTU4NzgwNDU5OX0.GG637Z4439NBPhInwiwmBKE8NK9IEi3R1B0x9FH7RAc","userName":"yyy"},"msg":"登录成功"}
+2020-04-25 16:49:59.286 ERROR [http-nio-8080-exec-1]com.lyq.blog.utils.jwt.JwtTokenUtil.getUserId:121 -jwt-getUserId(获取用户id错误信息): 
+java.lang.NullPointerException: null
+	at com.lyq.blog.utils.jwt.JwtTokenUtil.getUserId(JwtTokenUtil.java:119)
+	at com.lyq.blog.config.mp.MetaHandler.insertFill(MetaHandler.java:28)
+	at com.baomidou.mybatisplus.core.MybatisDefaultParameterHandler.lambda$insertFill$1(MybatisDefaultParameterHandler.java:179)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at com.baomidou.mybatisplus.core.MybatisDefaultParameterHandler.insertFill(MybatisDefaultParameterHandler.java:176)
+	at com.baomidou.mybatisplus.core.MybatisDefaultParameterHandler.process(MybatisDefaultParameterHandler.java:111)
+	at com.baomidou.mybatisplus.core.MybatisDefaultParameterHandler.processParameter(MybatisDefaultParameterHandler.java:84)
+	at com.baomidou.mybatisplus.core.MybatisDefaultParameterHandler.<init>(MybatisDefaultParameterHandler.java:55)
+	at com.baomidou.mybatisplus.core.MybatisXMLLanguageDriver.createParameterHandler(MybatisXMLLanguageDriver.java:34)
+	at com.baomidou.mybatisplus.core.MybatisXMLLanguageDriver.createParameterHandler(MybatisXMLLanguageDriver.java:28)
+	at org.apache.ibatis.session.Configuration.newParameterHandler(Configuration.java:579)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.<init>(BaseStatementHandler.java:69)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.<init>(PreparedStatementHandler.java:41)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.<init>(RoutingStatementHandler.java:46)
+	at org.apache.ibatis.session.Configuration.newStatementHandler(Configuration.java:592)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doUpdate(MybatisSimpleExecutor.java:52)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.update(MybatisCachingExecutor.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at com.baomidou.mybatisplus.extension.plugins.OptimisticLockerInterceptor.intercept(OptimisticLockerInterceptor.java:69)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy131.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy95.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:60)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:96)
+	at com.sun.proxy.$Proxy96.insert(Unknown Source)
+	at com.baomidou.mybatisplus.extension.service.IService.save(IService.java:59)
+	at com.baomidou.mybatisplus.extension.service.IService$$FastClassBySpringCGLIB$$f8525d18.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:687)
+	at com.lyq.blog.service.impl.LogServiceImpl$$EnhancerBySpringCGLIB$$bc8aa4cf.save(<generated>)
+	at com.lyq.blog.aop.aspect.LogAspect.doAfterReturning(LogAspect.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:626)
+	at org.springframework.aop.aspectj.AspectJAfterReturningAdvice.afterReturning(AspectJAfterReturningAdvice.java:66)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.lyq.blog.controller.UserController$$EnhancerBySpringCGLIB$$bf9d13cb.login(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-25 17:07:20.619 INFO  [SpringContextShutdownHook]o.s.jmx.export.annotation.AnnotationMBeanExporter.doUnregister:211 -Could not unregister MBean [com.github.tobato.fastdfs.domain.conn:name=fdfsConnectionPool,type=FdfsConnectionPool] as said MBean is not registered (perhaps already unregistered by an external process)
+2020-04-25 17:07:20.620 INFO  [SpringContextShutdownHook]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:218 -Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-25 17:07:20.621 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:350 -HikariPool-1 - Shutdown initiated...
+2020-04-25 17:07:20.630 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:352 -HikariPool-1 - Shutdown completed.
+2020-04-25 17:19:37.489 INFO  [main]com.lyq.blog.BlogBackApplication.logStarting:55 -Starting BlogBackApplication on JaydeMacBook-Pro.local with PID 9241 (/Users/jay/Desktop/idea_codes/博客/后端v2/blog-back/target/classes started by jay in /Users/jay/Desktop/idea_codes/博客/后端v2/blog-back)
+2020-04-25 17:19:37.492 DEBUG [main]com.lyq.blog.BlogBackApplication.logStarting:56 -Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-25 17:19:37.492 INFO  [main]com.lyq.blog.BlogBackApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-04-25 17:19:38.454 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:249 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-25 17:19:38.456 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-04-25 17:19:38.483 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 17ms. Found 0 Redis repository interfaces.
+2020-04-25 17:19:38.713 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'shiroConfig' of type [com.lyq.blog.config.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$a8882876] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 17:19:38.908 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisConfig' of type [com.lyq.blog.config.redis.RedisConfig$$EnhancerBySpringCGLIB$$1f71178a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 17:19:38.921 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 17:19:38.928 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 17:19:38.991 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 17:19:39.100 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 17:19:39.158 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisTemplate' of type [org.springframework.data.redis.core.RedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 17:19:39.206 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisService' of type [com.lyq.blog.service.RedisService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 17:19:39.209 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'cusHashedCredentialMatcher' of type [com.lyq.blog.config.shiro.custom.CusHashedCredentialMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 17:19:39.213 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'cusAuthorizingRealm' of type [com.lyq.blog.config.shiro.custom.CusAuthorizingRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 17:19:39.226 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 17:19:39.245 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 17:19:39.449 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8080 (http)
+2020-04-25 17:19:39.455 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-25 17:19:39.456 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-04-25 17:19:39.456 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-25 17:19:39.518 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-04-25 17:19:39.518 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 1995 ms
+2020-04-25 17:19:40.365 INFO  [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:181 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-25 17:19:40.896 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2020-04-25 17:19:40.927 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-25 17:19:40.930 INFO  [main]com.lyq.blog.BlogBackApplication.logStarted:61 -Started BlogBackApplication in 3.939 seconds (JVM running for 4.536)
+2020-04-25 17:19:42.640 INFO  [http-nio-8080-exec-2]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-25 17:19:42.640 INFO  [http-nio-8080-exec-2]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2020-04-25 17:19:42.650 INFO  [http-nio-8080-exec-2]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 10 ms
+2020-04-25 17:19:42.670 INFO  [http-nio-8080-exec-2]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：PUT
+2020-04-25 17:19:42.670 INFO  [http-nio-8080-exec-2]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /api/user/resetpwd
+2020-04-25 17:19:49.438 INFO  [http-nio-8080-exec-3]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：GET
+2020-04-25 17:19:49.438 INFO  [http-nio-8080-exec-3]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /api/user/logout
+2020-04-25 17:19:49.559 ERROR [http-nio-8080-exec-3]com.lyq.blog.utils.jwt.JwtTokenUtil.getUserId:121 -jwt-getUserId(获取用户id错误信息): 
+java.lang.NullPointerException: null
+	at com.lyq.blog.utils.jwt.JwtTokenUtil.getUserId(JwtTokenUtil.java:119)
+	at com.lyq.blog.config.shiro.custom.CusHashedCredentialMatcher.doCredentialsMatch(CusHashedCredentialMatcher.java:33)
+	at org.apache.shiro.realm.AuthenticatingRealm.assertCredentialsMatch(AuthenticatingRealm.java:600)
+	at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:581)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:273)
+	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198)
+	at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106)
+	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:275)
+	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:260)
+	at com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied(CusAccessControlFilter.java:52)
+	at org.apache.shiro.web.filter.AccessControlFilter.onAccessDenied(AccessControlFilter.java:133)
+	at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162)
+	at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:214)
+	at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:189)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-25 17:19:49.652 INFO  [http-nio-8080-exec-3]io.lettuce.core.EpollProvider.<clinit>:68 -Starting without optional epoll library
+2020-04-25 17:19:49.655 INFO  [http-nio-8080-exec-3]io.lettuce.core.KqueueProvider.<clinit>:70 -Starting without optional kqueue library
+2020-04-25 17:19:49.811 WARN  [http-nio-8080-exec-3]org.apache.shiro.authc.AbstractAuthenticator.authenticate:216 -Authentication failed for token submission [com.lyq.blog.config.shiro.custom.CusUsernamePasswordToken - null, rememberMe=false].  Possible unexpected error? (Typical or expected login exceptions should extend from AuthenticationException).
+com.lyq.blog.exception.BusinessException: token失效，请刷新token
+	at com.lyq.blog.config.shiro.custom.CusHashedCredentialMatcher.doCredentialsMatch(CusHashedCredentialMatcher.java:45)
+	at org.apache.shiro.realm.AuthenticatingRealm.assertCredentialsMatch(AuthenticatingRealm.java:600)
+	at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:581)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:273)
+	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198)
+	at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106)
+	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:275)
+	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:260)
+	at com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied(CusAccessControlFilter.java:52)
+	at org.apache.shiro.web.filter.AccessControlFilter.onAccessDenied(AccessControlFilter.java:133)
+	at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162)
+	at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:214)
+	at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:189)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-25 17:19:54.834 INFO  [http-nio-8080-exec-4]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:108 -请求地址 : /api/user/login
+2020-04-25 17:19:54.835 INFO  [http-nio-8080-exec-4]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:109 -请求方式 : POST
+2020-04-25 17:19:54.840 INFO  [http-nio-8080-exec-4]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:112 -IP : 0:0:0:0:0:0:0:1
+2020-04-25 17:19:54.842 INFO  [http-nio-8080-exec-4]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:114 -方法 : com.lyq.blog.controller.UserController.login
+2020-04-25 17:19:54.843 INFO  [http-nio-8080-exec-4]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:116 -请求参数：[UserLoginReqVo(userName=yyy, password=111222)]
+2020-04-25 17:19:54.955 INFO  [http-nio-8080-exec-4]com.zaxxer.hikari.HikariDataSource.getConnection:110 -HikariPool-1 - Starting...
+2020-04-25 17:19:55.299 INFO  [http-nio-8080-exec-4]com.zaxxer.hikari.HikariDataSource.getConnection:123 -HikariPool-1 - Start completed.
+2020-04-25 17:19:55.398 INFO  [http-nio-8080-exec-4]com.lyq.blog.aop.aspect.LogAspect.doAround:64 -耗时 : 564
+2020-04-25 17:19:55.401 INFO  [http-nio-8080-exec-4]com.lyq.blog.aop.aspect.LogAspect.doAfterReturning:78 -返回值：{"code":0,"data":{"accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJmYzdlZjkyMTMwMzEwOTMxNWZiYTY1ZTJlZmUwYzU0OSMiLCJqd3RfdXNlcl9uYW1lX2tleV8iOiJ5eXkiLCJzdWIiOiJ1c2VyXzEyNTM5MzIxNzI0NzgyOTYwNjQiLCJqd3RfaXNfYWRtaW5fIjowLCJleHAiOjE1ODc4MTM1OTUsImlhdCI6MTU4NzgwNjM5NX0.-hTj46D0NtwE1zvn9xRXWpEoFcy1Gszlm2x9tt1vQWM","isAdmin":0,"refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJmYzdlZjkyMTMwMzEwOTMxNWZiYTY1ZTJlZmUwYzU0OSMiLCJqd3RfdXNlcl9uYW1lX2tleV8iOiJ5eXkiLCJzdWIiOiJ1c2VyXzEyNTM5MzIxNzI0NzgyOTYwNjQiLCJqd3RfaXNfYWRtaW5fIjowLCJleHAiOjE1ODc4MzUxOTUsImlhdCI6MTU4NzgwNjM5NX0.9cakSykZK82i1xc71UvYtCjp1fkALanE3w7jKmdLWuY","userName":"yyy"},"msg":"登录成功"}
+2020-04-25 17:19:55.415 ERROR [http-nio-8080-exec-4]com.lyq.blog.utils.jwt.JwtTokenUtil.getUserId:121 -jwt-getUserId(获取用户id错误信息): 
+java.lang.NullPointerException: null
+	at com.lyq.blog.utils.jwt.JwtTokenUtil.getUserId(JwtTokenUtil.java:119)
+	at com.lyq.blog.config.mp.MetaHandler.insertFill(MetaHandler.java:28)
+	at com.baomidou.mybatisplus.core.MybatisDefaultParameterHandler.lambda$insertFill$1(MybatisDefaultParameterHandler.java:179)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at com.baomidou.mybatisplus.core.MybatisDefaultParameterHandler.insertFill(MybatisDefaultParameterHandler.java:176)
+	at com.baomidou.mybatisplus.core.MybatisDefaultParameterHandler.process(MybatisDefaultParameterHandler.java:111)
+	at com.baomidou.mybatisplus.core.MybatisDefaultParameterHandler.processParameter(MybatisDefaultParameterHandler.java:84)
+	at com.baomidou.mybatisplus.core.MybatisDefaultParameterHandler.<init>(MybatisDefaultParameterHandler.java:55)
+	at com.baomidou.mybatisplus.core.MybatisXMLLanguageDriver.createParameterHandler(MybatisXMLLanguageDriver.java:34)
+	at com.baomidou.mybatisplus.core.MybatisXMLLanguageDriver.createParameterHandler(MybatisXMLLanguageDriver.java:28)
+	at org.apache.ibatis.session.Configuration.newParameterHandler(Configuration.java:579)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.<init>(BaseStatementHandler.java:69)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.<init>(PreparedStatementHandler.java:41)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.<init>(RoutingStatementHandler.java:46)
+	at org.apache.ibatis.session.Configuration.newStatementHandler(Configuration.java:592)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doUpdate(MybatisSimpleExecutor.java:52)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.update(MybatisCachingExecutor.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at com.baomidou.mybatisplus.extension.plugins.OptimisticLockerInterceptor.intercept(OptimisticLockerInterceptor.java:69)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy135.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy95.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:60)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:96)
+	at com.sun.proxy.$Proxy96.insert(Unknown Source)
+	at com.baomidou.mybatisplus.extension.service.IService.save(IService.java:59)
+	at com.baomidou.mybatisplus.extension.service.IService$$FastClassBySpringCGLIB$$f8525d18.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:687)
+	at com.lyq.blog.service.impl.LogServiceImpl$$EnhancerBySpringCGLIB$$39defc36.save(<generated>)
+	at com.lyq.blog.aop.aspect.LogAspect.doAfterReturning(LogAspect.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:626)
+	at org.springframework.aop.aspectj.AspectJAfterReturningAdvice.afterReturning(AspectJAfterReturningAdvice.java:66)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.lyq.blog.controller.UserController$$EnhancerBySpringCGLIB$$17460108.login(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-25 17:21:11.800 INFO  [http-nio-8080-exec-7]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：PUT
+2020-04-25 17:21:11.801 INFO  [http-nio-8080-exec-7]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /api/user/resetpwd
+2020-04-25 17:21:19.289 INFO  [http-nio-8080-exec-8]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：PUT
+2020-04-25 17:21:19.290 INFO  [http-nio-8080-exec-8]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /api/user/resetpwd
+2020-04-25 17:21:23.832 INFO  [http-nio-8080-exec-9]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：PUT
+2020-04-25 17:21:23.832 INFO  [http-nio-8080-exec-9]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /api/user/resetpwd
+2020-04-25 17:21:23.891 INFO  [http-nio-8080-exec-9]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:108 -请求地址 : /api/user/resetpwd
+2020-04-25 17:21:23.891 INFO  [http-nio-8080-exec-9]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:109 -请求方式 : PUT
+2020-04-25 17:21:23.892 INFO  [http-nio-8080-exec-9]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:112 -IP : 0:0:0:0:0:0:0:1
+2020-04-25 17:21:23.893 INFO  [http-nio-8080-exec-9]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:114 -方法 : com.lyq.blog.controller.UserController.userResetPwd
+2020-04-25 17:21:23.893 INFO  [http-nio-8080-exec-9]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:116 -请求参数：[UserResetPwdReqVo(oldPassword=123456, newPassword=123456), org.apache.shiro.web.servlet.ShiroHttpServletRequest@2955aaf9]
+2020-04-25 17:22:49.790 INFO  [SpringContextShutdownHook]o.s.jmx.export.annotation.AnnotationMBeanExporter.doUnregister:211 -Could not unregister MBean [com.github.tobato.fastdfs.domain.conn:name=fdfsConnectionPool,type=FdfsConnectionPool] as said MBean is not registered (perhaps already unregistered by an external process)
+2020-04-25 17:22:49.791 INFO  [SpringContextShutdownHook]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:218 -Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-25 17:22:49.792 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:350 -HikariPool-1 - Shutdown initiated...
+2020-04-25 17:22:49.800 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:352 -HikariPool-1 - Shutdown completed.
+2020-04-25 17:24:03.131 INFO  [main]com.lyq.blog.BlogBackApplication.logStarting:55 -Starting BlogBackApplication on JaydeMacBook-Pro.local with PID 9279 (/Users/jay/Desktop/idea_codes/博客/后端v2/blog-back/target/classes started by jay in /Users/jay/Desktop/idea_codes/博客/后端v2/blog-back)
+2020-04-25 17:24:03.137 DEBUG [main]com.lyq.blog.BlogBackApplication.logStarting:56 -Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-25 17:24:03.139 INFO  [main]com.lyq.blog.BlogBackApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-04-25 17:24:04.075 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:249 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-25 17:24:04.079 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-04-25 17:24:04.147 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 45ms. Found 0 Redis repository interfaces.
+2020-04-25 17:24:04.621 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'shiroConfig' of type [com.lyq.blog.config.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$70a236d9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 17:24:04.812 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisConfig' of type [com.lyq.blog.config.redis.RedisConfig$$EnhancerBySpringCGLIB$$e78b25ed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 17:24:04.824 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 17:24:04.832 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 17:24:04.891 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 17:24:05.005 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 17:24:05.106 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisTemplate' of type [org.springframework.data.redis.core.RedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 17:24:05.158 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisService' of type [com.lyq.blog.service.RedisService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 17:24:05.161 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'cusHashedCredentialMatcher' of type [com.lyq.blog.config.shiro.custom.CusHashedCredentialMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 17:24:05.165 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'cusAuthorizingRealm' of type [com.lyq.blog.config.shiro.custom.CusAuthorizingRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 17:24:05.178 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 17:24:05.196 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 17:24:05.496 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8080 (http)
+2020-04-25 17:24:05.503 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-25 17:24:05.503 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-04-25 17:24:05.504 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-25 17:24:05.565 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-04-25 17:24:05.565 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 2321 ms
+2020-04-25 17:24:06.652 INFO  [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:181 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-25 17:24:07.489 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2020-04-25 17:24:07.530 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-25 17:24:07.534 INFO  [main]com.lyq.blog.BlogBackApplication.logStarted:61 -Started BlogBackApplication in 5.33 seconds (JVM running for 6.193)
+2020-04-25 17:24:08.897 INFO  [http-nio-8080-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-25 17:24:08.898 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2020-04-25 17:24:08.913 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 15 ms
+2020-04-25 17:24:08.936 INFO  [http-nio-8080-exec-1]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：PUT
+2020-04-25 17:24:08.936 INFO  [http-nio-8080-exec-1]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /api/user/resetpwd
+2020-04-25 17:24:09.092 INFO  [http-nio-8080-exec-1]io.lettuce.core.EpollProvider.<clinit>:68 -Starting without optional epoll library
+2020-04-25 17:24:09.094 INFO  [http-nio-8080-exec-1]io.lettuce.core.KqueueProvider.<clinit>:70 -Starting without optional kqueue library
+2020-04-25 17:24:09.577 INFO  [http-nio-8080-exec-1]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:108 -请求地址 : /api/user/resetpwd
+2020-04-25 17:24:09.577 INFO  [http-nio-8080-exec-1]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:109 -请求方式 : PUT
+2020-04-25 17:24:09.581 INFO  [http-nio-8080-exec-1]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:112 -IP : 0:0:0:0:0:0:0:1
+2020-04-25 17:24:09.583 INFO  [http-nio-8080-exec-1]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:114 -方法 : com.lyq.blog.controller.UserController.userResetPwd
+2020-04-25 17:24:09.584 INFO  [http-nio-8080-exec-1]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:116 -请求参数：[UserResetPwdReqVo(oldPassword=123456, newPassword=123456), org.apache.shiro.web.servlet.ShiroHttpServletRequest@542dcb2c]
+2020-04-25 17:24:09.657 INFO  [http-nio-8080-exec-1]com.zaxxer.hikari.HikariDataSource.getConnection:110 -HikariPool-1 - Starting...
+2020-04-25 17:24:09.842 INFO  [http-nio-8080-exec-1]com.zaxxer.hikari.HikariDataSource.getConnection:123 -HikariPool-1 - Start completed.
+2020-04-25 17:24:28.949 INFO  [http-nio-8080-exec-3]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：PUT
+2020-04-25 17:24:28.949 INFO  [http-nio-8080-exec-3]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /api/user/resetpwd
+2020-04-25 17:24:29.010 INFO  [http-nio-8080-exec-3]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:108 -请求地址 : /api/user/resetpwd
+2020-04-25 17:24:29.011 INFO  [http-nio-8080-exec-3]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:109 -请求方式 : PUT
+2020-04-25 17:24:29.012 INFO  [http-nio-8080-exec-3]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:112 -IP : 0:0:0:0:0:0:0:1
+2020-04-25 17:24:29.013 INFO  [http-nio-8080-exec-3]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:114 -方法 : com.lyq.blog.controller.UserController.userResetPwd
+2020-04-25 17:24:29.013 INFO  [http-nio-8080-exec-3]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:116 -请求参数：[UserResetPwdReqVo(oldPassword=123456, newPassword=123456), org.apache.shiro.web.servlet.ShiroHttpServletRequest@4c954e1]
+2020-04-25 17:24:36.021 INFO  [http-nio-8080-exec-4]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：PUT
+2020-04-25 17:24:36.021 INFO  [http-nio-8080-exec-4]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /api/user/resetpwd
+2020-04-25 17:24:36.083 INFO  [http-nio-8080-exec-4]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:108 -请求地址 : /api/user/resetpwd
+2020-04-25 17:24:36.083 INFO  [http-nio-8080-exec-4]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:109 -请求方式 : PUT
+2020-04-25 17:24:36.084 INFO  [http-nio-8080-exec-4]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:112 -IP : 0:0:0:0:0:0:0:1
+2020-04-25 17:24:36.084 INFO  [http-nio-8080-exec-4]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:114 -方法 : com.lyq.blog.controller.UserController.userResetPwd
+2020-04-25 17:24:36.084 INFO  [http-nio-8080-exec-4]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:116 -请求参数：[UserResetPwdReqVo(oldPassword=111222, newPassword=123456), org.apache.shiro.web.servlet.ShiroHttpServletRequest@e687619]
+2020-04-25 18:45:32.410 WARN  [HikariPool-1 housekeeper]com.zaxxer.hikari.pool.HikariPool.run:779 -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h5m22s190ms).
+2020-04-25 20:01:31.005 WARN  [HikariPool-1 housekeeper]com.zaxxer.hikari.pool.HikariPool.run:779 -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h15m28s571ms).
+2020-04-25 20:02:18.144 INFO  [SpringContextShutdownHook]o.s.jmx.export.annotation.AnnotationMBeanExporter.doUnregister:211 -Could not unregister MBean [com.github.tobato.fastdfs.domain.conn:name=fdfsConnectionPool,type=FdfsConnectionPool] as said MBean is not registered (perhaps already unregistered by an external process)
+2020-04-25 20:02:18.145 INFO  [SpringContextShutdownHook]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:218 -Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-25 20:02:18.146 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:350 -HikariPool-1 - Shutdown initiated...
+2020-04-25 20:02:18.154 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:352 -HikariPool-1 - Shutdown completed.
+2020-04-25 20:02:20.996 INFO  [main]com.lyq.blog.BlogBackApplication.logStarting:55 -Starting BlogBackApplication on JaydeMacBook-Pro.local with PID 9429 (/Users/jay/Desktop/idea_codes/博客/后端v2/blog-back/target/classes started by jay in /Users/jay/Desktop/idea_codes/博客/后端v2/blog-back)
+2020-04-25 20:02:21.010 DEBUG [main]com.lyq.blog.BlogBackApplication.logStarting:56 -Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-25 20:02:21.011 INFO  [main]com.lyq.blog.BlogBackApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-04-25 20:02:22.299 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:249 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-25 20:02:22.302 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-04-25 20:02:22.351 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 35ms. Found 0 Redis repository interfaces.
+2020-04-25 20:02:22.768 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'shiroConfig' of type [com.lyq.blog.config.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$58a30d5d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:02:23.131 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisConfig' of type [com.lyq.blog.config.redis.RedisConfig$$EnhancerBySpringCGLIB$$cf8bfc71] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:02:23.146 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:02:23.154 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:02:23.242 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:02:23.372 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:02:23.427 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisTemplate' of type [org.springframework.data.redis.core.RedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:02:23.478 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisService' of type [com.lyq.blog.service.RedisService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:02:23.480 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'cusHashedCredentialMatcher' of type [com.lyq.blog.config.shiro.custom.CusHashedCredentialMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:02:23.485 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'cusAuthorizingRealm' of type [com.lyq.blog.config.shiro.custom.CusAuthorizingRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:02:23.498 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:02:23.517 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:02:23.868 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8080 (http)
+2020-04-25 20:02:23.881 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-25 20:02:23.882 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-04-25 20:02:23.883 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-25 20:02:24.011 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-04-25 20:02:24.012 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 2788 ms
+2020-04-25 20:02:25.375 INFO  [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:181 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-25 20:02:25.982 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2020-04-25 20:02:26.014 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-25 20:02:26.018 INFO  [main]com.lyq.blog.BlogBackApplication.logStarted:61 -Started BlogBackApplication in 5.906 seconds (JVM running for 7.048)
+2020-04-25 20:02:27.946 INFO  [SpringContextShutdownHook]o.s.jmx.export.annotation.AnnotationMBeanExporter.doUnregister:211 -Could not unregister MBean [com.github.tobato.fastdfs.domain.conn:name=fdfsConnectionPool,type=FdfsConnectionPool] as said MBean is not registered (perhaps already unregistered by an external process)
+2020-04-25 20:02:27.947 INFO  [SpringContextShutdownHook]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:218 -Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-25 20:02:52.432 INFO  [main]com.lyq.blog.BlogBackApplication.logStarting:55 -Starting BlogBackApplication on JaydeMacBook-Pro.local with PID 9440 (/Users/jay/Desktop/idea_codes/博客/后端v2/blog-back/target/classes started by jay in /Users/jay/Desktop/idea_codes/博客/后端v2/blog-back)
+2020-04-25 20:02:52.435 DEBUG [main]com.lyq.blog.BlogBackApplication.logStarting:56 -Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-25 20:02:52.435 INFO  [main]com.lyq.blog.BlogBackApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-04-25 20:02:53.069 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:249 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-25 20:02:53.071 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-04-25 20:02:53.101 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 19ms. Found 0 Redis repository interfaces.
+2020-04-25 20:02:53.343 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'shiroConfig' of type [com.lyq.blog.config.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$d9740721] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:02:53.562 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisConfig' of type [com.lyq.blog.config.redis.RedisConfig$$EnhancerBySpringCGLIB$$505cf635] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:02:53.588 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:02:53.597 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:02:53.661 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:02:53.772 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:02:53.839 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisTemplate' of type [org.springframework.data.redis.core.RedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:02:53.917 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisService' of type [com.lyq.blog.service.RedisService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:02:53.922 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'cusHashedCredentialMatcher' of type [com.lyq.blog.config.shiro.custom.CusHashedCredentialMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:02:53.930 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'cusAuthorizingRealm' of type [com.lyq.blog.config.shiro.custom.CusAuthorizingRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:02:53.952 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:02:53.981 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:02:54.259 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8080 (http)
+2020-04-25 20:02:54.265 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-25 20:02:54.265 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-04-25 20:02:54.266 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-25 20:02:54.328 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-04-25 20:02:54.328 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 1859 ms
+2020-04-25 20:02:55.575 INFO  [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:181 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-25 20:02:56.253 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2020-04-25 20:02:56.286 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-25 20:02:56.289 INFO  [main]com.lyq.blog.BlogBackApplication.logStarted:61 -Started BlogBackApplication in 4.493 seconds (JVM running for 5.147)
+2020-04-25 20:03:01.767 INFO  [http-nio-8080-exec-2]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-25 20:03:01.767 INFO  [http-nio-8080-exec-2]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2020-04-25 20:03:01.781 INFO  [http-nio-8080-exec-2]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 14 ms
+2020-04-25 20:03:01.803 INFO  [http-nio-8080-exec-2]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：PUT
+2020-04-25 20:03:01.803 INFO  [http-nio-8080-exec-2]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /api/user/resetpwd
+2020-04-25 20:03:01.857 ERROR [http-nio-8080-exec-2]com.lyq.blog.utils.jwt.JwtTokenUtil.getUserId:121 -jwt-getUserId(获取用户id错误信息): 
+java.lang.NullPointerException: null
+	at com.lyq.blog.utils.jwt.JwtTokenUtil.getUserId(JwtTokenUtil.java:119)
+	at com.lyq.blog.config.shiro.custom.CusHashedCredentialMatcher.doCredentialsMatch(CusHashedCredentialMatcher.java:33)
+	at org.apache.shiro.realm.AuthenticatingRealm.assertCredentialsMatch(AuthenticatingRealm.java:600)
+	at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:581)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:273)
+	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198)
+	at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106)
+	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:275)
+	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:260)
+	at com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied(CusAccessControlFilter.java:52)
+	at org.apache.shiro.web.filter.AccessControlFilter.onAccessDenied(AccessControlFilter.java:133)
+	at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162)
+	at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:214)
+	at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:189)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-25 20:03:01.981 INFO  [http-nio-8080-exec-2]io.lettuce.core.EpollProvider.<clinit>:68 -Starting without optional epoll library
+2020-04-25 20:03:01.983 INFO  [http-nio-8080-exec-2]io.lettuce.core.KqueueProvider.<clinit>:70 -Starting without optional kqueue library
+2020-04-25 20:03:02.191 WARN  [http-nio-8080-exec-2]org.apache.shiro.authc.AbstractAuthenticator.authenticate:216 -Authentication failed for token submission [com.lyq.blog.config.shiro.custom.CusUsernamePasswordToken - null, rememberMe=false].  Possible unexpected error? (Typical or expected login exceptions should extend from AuthenticationException).
+com.lyq.blog.exception.BusinessException: token失效，请刷新token
+	at com.lyq.blog.config.shiro.custom.CusHashedCredentialMatcher.doCredentialsMatch(CusHashedCredentialMatcher.java:45)
+	at org.apache.shiro.realm.AuthenticatingRealm.assertCredentialsMatch(AuthenticatingRealm.java:600)
+	at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:581)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:273)
+	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198)
+	at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106)
+	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:275)
+	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:260)
+	at com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied(CusAccessControlFilter.java:52)
+	at org.apache.shiro.web.filter.AccessControlFilter.onAccessDenied(AccessControlFilter.java:133)
+	at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162)
+	at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:214)
+	at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:189)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-25 20:03:07.649 INFO  [http-nio-8080-exec-3]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:108 -请求地址 : /api/user/login
+2020-04-25 20:03:07.649 INFO  [http-nio-8080-exec-3]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:109 -请求方式 : POST
+2020-04-25 20:03:07.654 INFO  [http-nio-8080-exec-3]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:112 -IP : 0:0:0:0:0:0:0:1
+2020-04-25 20:03:07.657 INFO  [http-nio-8080-exec-3]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:114 -方法 : com.lyq.blog.controller.UserController.login
+2020-04-25 20:03:07.657 INFO  [http-nio-8080-exec-3]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:116 -请求参数：[UserLoginReqVo(userName=yyy, password=111222)]
+2020-04-25 20:03:07.744 INFO  [http-nio-8080-exec-3]com.zaxxer.hikari.HikariDataSource.getConnection:110 -HikariPool-1 - Starting...
+2020-04-25 20:03:08.112 INFO  [http-nio-8080-exec-3]com.zaxxer.hikari.HikariDataSource.getConnection:123 -HikariPool-1 - Start completed.
+2020-04-25 20:03:08.204 INFO  [http-nio-8080-exec-3]com.lyq.blog.aop.aspect.LogAspect.doAround:64 -耗时 : 555
+2020-04-25 20:03:08.209 INFO  [http-nio-8080-exec-3]com.lyq.blog.aop.aspect.LogAspect.doAfterReturning:78 -返回值：{"code":0,"data":{"accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJmYzdlZjkyMTMwMzEwOTMxNWZiYTY1ZTJlZmUwYzU0OSMiLCJqd3RfdXNlcl9uYW1lX2tleV8iOiJ5eXkiLCJzdWIiOiJ1c2VyXzEyNTM5MzIxNzI0NzgyOTYwNjQiLCJqd3RfaXNfYWRtaW5fIjowLCJleHAiOjE1ODc4MjMzODgsImlhdCI6MTU4NzgxNjE4OH0.XHENf69xMqMK2y2ZsJcrUl_sceZRKhMg2LipYQD8v_o","isAdmin":0,"refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJmYzdlZjkyMTMwMzEwOTMxNWZiYTY1ZTJlZmUwYzU0OSMiLCJqd3RfdXNlcl9uYW1lX2tleV8iOiJ5eXkiLCJzdWIiOiJ1c2VyXzEyNTM5MzIxNzI0NzgyOTYwNjQiLCJqd3RfaXNfYWRtaW5fIjowLCJleHAiOjE1ODc4NDQ5ODgsImlhdCI6MTU4NzgxNjE4OH0.U8GOSv4uetSNqyXFaH1Z-131e_hQjyoMHM_SYeKLt0U","userName":"yyy"},"msg":"登录成功"}
+2020-04-25 20:03:08.225 ERROR [http-nio-8080-exec-3]com.lyq.blog.utils.jwt.JwtTokenUtil.getUserId:121 -jwt-getUserId(获取用户id错误信息): 
+java.lang.NullPointerException: null
+	at com.lyq.blog.utils.jwt.JwtTokenUtil.getUserId(JwtTokenUtil.java:119)
+	at com.lyq.blog.config.mp.MetaHandler.insertFill(MetaHandler.java:28)
+	at com.baomidou.mybatisplus.core.MybatisDefaultParameterHandler.lambda$insertFill$1(MybatisDefaultParameterHandler.java:179)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at com.baomidou.mybatisplus.core.MybatisDefaultParameterHandler.insertFill(MybatisDefaultParameterHandler.java:176)
+	at com.baomidou.mybatisplus.core.MybatisDefaultParameterHandler.process(MybatisDefaultParameterHandler.java:111)
+	at com.baomidou.mybatisplus.core.MybatisDefaultParameterHandler.processParameter(MybatisDefaultParameterHandler.java:84)
+	at com.baomidou.mybatisplus.core.MybatisDefaultParameterHandler.<init>(MybatisDefaultParameterHandler.java:55)
+	at com.baomidou.mybatisplus.core.MybatisXMLLanguageDriver.createParameterHandler(MybatisXMLLanguageDriver.java:34)
+	at com.baomidou.mybatisplus.core.MybatisXMLLanguageDriver.createParameterHandler(MybatisXMLLanguageDriver.java:28)
+	at org.apache.ibatis.session.Configuration.newParameterHandler(Configuration.java:579)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.<init>(BaseStatementHandler.java:69)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.<init>(PreparedStatementHandler.java:41)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.<init>(RoutingStatementHandler.java:46)
+	at org.apache.ibatis.session.Configuration.newStatementHandler(Configuration.java:592)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doUpdate(MybatisSimpleExecutor.java:52)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.update(MybatisCachingExecutor.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at com.baomidou.mybatisplus.extension.plugins.OptimisticLockerInterceptor.intercept(OptimisticLockerInterceptor.java:69)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy135.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy95.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:60)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:96)
+	at com.sun.proxy.$Proxy96.insert(Unknown Source)
+	at com.baomidou.mybatisplus.extension.service.IService.save(IService.java:59)
+	at com.baomidou.mybatisplus.extension.service.IService$$FastClassBySpringCGLIB$$f8525d18.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:687)
+	at com.lyq.blog.service.impl.LogServiceImpl$$EnhancerBySpringCGLIB$$714fc1cc.save(<generated>)
+	at com.lyq.blog.aop.aspect.LogAspect.doAfterReturning(LogAspect.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:626)
+	at org.springframework.aop.aspectj.AspectJAfterReturningAdvice.afterReturning(AspectJAfterReturningAdvice.java:66)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.lyq.blog.controller.UserController$$EnhancerBySpringCGLIB$$1272a2e3.login(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-25 20:03:35.726 INFO  [http-nio-8080-exec-4]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：PUT
+2020-04-25 20:03:35.726 INFO  [http-nio-8080-exec-4]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /api/user/resetpwd
+2020-04-25 20:03:35.813 INFO  [http-nio-8080-exec-4]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:108 -请求地址 : /api/user/resetpwd
+2020-04-25 20:03:35.813 INFO  [http-nio-8080-exec-4]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:109 -请求方式 : PUT
+2020-04-25 20:03:35.814 INFO  [http-nio-8080-exec-4]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:112 -IP : 0:0:0:0:0:0:0:1
+2020-04-25 20:03:35.814 INFO  [http-nio-8080-exec-4]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:114 -方法 : com.lyq.blog.controller.UserController.userResetPwd
+2020-04-25 20:03:35.814 INFO  [http-nio-8080-exec-4]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:116 -请求参数：[UserResetPwdReqVo(oldPassword=123456, newPassword=123456), org.apache.shiro.web.servlet.ShiroHttpServletRequest@62e4fc77]
+2020-04-25 20:03:41.107 INFO  [http-nio-8080-exec-5]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：PUT
+2020-04-25 20:03:41.107 INFO  [http-nio-8080-exec-5]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /api/user/resetpwd
+2020-04-25 20:03:47.543 INFO  [http-nio-8080-exec-6]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：PUT
+2020-04-25 20:03:47.543 INFO  [http-nio-8080-exec-6]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /api/user/resetpwd
+2020-04-25 20:04:12.285 INFO  [http-nio-8080-exec-7]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：PUT
+2020-04-25 20:04:12.285 INFO  [http-nio-8080-exec-7]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /api/user/resetpwd
+2020-04-25 20:04:12.687 INFO  [http-nio-8080-exec-7]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:108 -请求地址 : /api/user/resetpwd
+2020-04-25 20:04:12.688 INFO  [http-nio-8080-exec-7]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:109 -请求方式 : PUT
+2020-04-25 20:04:12.689 INFO  [http-nio-8080-exec-7]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:112 -IP : 0:0:0:0:0:0:0:1
+2020-04-25 20:04:12.689 INFO  [http-nio-8080-exec-7]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:114 -方法 : com.lyq.blog.controller.UserController.userResetPwd
+2020-04-25 20:04:12.690 INFO  [http-nio-8080-exec-7]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:116 -请求参数：[UserResetPwdReqVo(oldPassword=111222, newPassword=123456), org.apache.shiro.web.servlet.ShiroHttpServletRequest@66a57704]
+2020-04-25 20:04:47.366 INFO  [SpringContextShutdownHook]o.s.jmx.export.annotation.AnnotationMBeanExporter.doUnregister:211 -Could not unregister MBean [com.github.tobato.fastdfs.domain.conn:name=fdfsConnectionPool,type=FdfsConnectionPool] as said MBean is not registered (perhaps already unregistered by an external process)
+2020-04-25 20:04:47.366 INFO  [SpringContextShutdownHook]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:218 -Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-25 20:04:47.367 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:350 -HikariPool-1 - Shutdown initiated...
+2020-04-25 20:04:47.374 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:352 -HikariPool-1 - Shutdown completed.
+2020-04-25 20:05:05.397 INFO  [main]com.lyq.blog.BlogBackApplication.logStarting:55 -Starting BlogBackApplication on JaydeMacBook-Pro.local with PID 9460 (/Users/jay/Desktop/idea_codes/博客/后端v2/blog-back/target/classes started by jay in /Users/jay/Desktop/idea_codes/博客/后端v2/blog-back)
+2020-04-25 20:05:05.401 DEBUG [main]com.lyq.blog.BlogBackApplication.logStarting:56 -Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-25 20:05:05.402 INFO  [main]com.lyq.blog.BlogBackApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-04-25 20:05:06.424 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:249 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-25 20:05:06.426 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-04-25 20:05:06.464 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 25ms. Found 0 Redis repository interfaces.
+2020-04-25 20:05:06.797 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'shiroConfig' of type [com.lyq.blog.config.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$f643a813] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:05:07.139 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisConfig' of type [com.lyq.blog.config.redis.RedisConfig$$EnhancerBySpringCGLIB$$6d2c9727] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:05:07.155 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:05:07.163 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:05:07.238 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:05:07.344 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:05:07.408 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisTemplate' of type [org.springframework.data.redis.core.RedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:05:07.464 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisService' of type [com.lyq.blog.service.RedisService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:05:07.467 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'cusHashedCredentialMatcher' of type [com.lyq.blog.config.shiro.custom.CusHashedCredentialMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:05:07.472 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'cusAuthorizingRealm' of type [com.lyq.blog.config.shiro.custom.CusAuthorizingRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:05:07.486 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:05:07.508 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-25 20:05:07.779 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8080 (http)
+2020-04-25 20:05:07.787 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-25 20:05:07.789 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-04-25 20:05:07.789 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-25 20:05:07.874 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-04-25 20:05:07.875 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 2426 ms
+2020-04-25 20:05:08.830 INFO  [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:181 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-25 20:05:09.323 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2020-04-25 20:05:09.355 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-25 20:05:09.358 INFO  [main]com.lyq.blog.BlogBackApplication.logStarted:61 -Started BlogBackApplication in 4.98 seconds (JVM running for 5.736)
+2020-04-25 20:06:05.388 INFO  [http-nio-8080-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-25 20:06:05.388 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2020-04-25 20:06:05.402 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 13 ms
+2020-04-25 20:06:05.430 INFO  [http-nio-8080-exec-1]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：GET
+2020-04-25 20:06:05.431 INFO  [http-nio-8080-exec-1]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /api/user/user_1253932172478296064
+2020-04-25 20:06:05.504 ERROR [http-nio-8080-exec-1]com.lyq.blog.utils.jwt.JwtTokenUtil.getUserId:121 -jwt-getUserId(获取用户id错误信息): 
+java.lang.NullPointerException: null
+	at com.lyq.blog.utils.jwt.JwtTokenUtil.getUserId(JwtTokenUtil.java:119)
+	at com.lyq.blog.config.shiro.custom.CusHashedCredentialMatcher.doCredentialsMatch(CusHashedCredentialMatcher.java:33)
+	at org.apache.shiro.realm.AuthenticatingRealm.assertCredentialsMatch(AuthenticatingRealm.java:600)
+	at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:581)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:273)
+	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198)
+	at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106)
+	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:275)
+	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:260)
+	at com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied(CusAccessControlFilter.java:52)
+	at org.apache.shiro.web.filter.AccessControlFilter.onAccessDenied(AccessControlFilter.java:133)
+	at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162)
+	at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:214)
+	at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:189)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-25 20:06:05.602 INFO  [http-nio-8080-exec-1]io.lettuce.core.EpollProvider.<clinit>:68 -Starting without optional epoll library
+2020-04-25 20:06:05.604 INFO  [http-nio-8080-exec-1]io.lettuce.core.KqueueProvider.<clinit>:70 -Starting without optional kqueue library
+2020-04-25 20:06:05.764 WARN  [http-nio-8080-exec-1]org.apache.shiro.authc.AbstractAuthenticator.authenticate:216 -Authentication failed for token submission [com.lyq.blog.config.shiro.custom.CusUsernamePasswordToken - null, rememberMe=false].  Possible unexpected error? (Typical or expected login exceptions should extend from AuthenticationException).
+com.lyq.blog.exception.BusinessException: token失效，请刷新token
+	at com.lyq.blog.config.shiro.custom.CusHashedCredentialMatcher.doCredentialsMatch(CusHashedCredentialMatcher.java:45)
+	at org.apache.shiro.realm.AuthenticatingRealm.assertCredentialsMatch(AuthenticatingRealm.java:600)
+	at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:581)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:273)
+	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198)
+	at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106)
+	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:275)
+	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:260)
+	at com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied(CusAccessControlFilter.java:52)
+	at org.apache.shiro.web.filter.AccessControlFilter.onAccessDenied(AccessControlFilter.java:133)
+	at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162)
+	at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:214)
+	at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:189)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-25 20:06:15.837 INFO  [http-nio-8080-exec-3]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:108 -请求地址 : /api/user/login
+2020-04-25 20:06:15.838 INFO  [http-nio-8080-exec-3]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:109 -请求方式 : POST
+2020-04-25 20:06:15.844 INFO  [http-nio-8080-exec-3]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:112 -IP : 0:0:0:0:0:0:0:1
+2020-04-25 20:06:15.846 INFO  [http-nio-8080-exec-3]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:114 -方法 : com.lyq.blog.controller.UserController.login
+2020-04-25 20:06:15.846 INFO  [http-nio-8080-exec-3]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:116 -请求参数：[UserLoginReqVo(userName=admin, password=111222)]
+2020-04-25 20:06:15.924 INFO  [http-nio-8080-exec-3]com.zaxxer.hikari.HikariDataSource.getConnection:110 -HikariPool-1 - Starting...
+2020-04-25 20:06:16.316 INFO  [http-nio-8080-exec-3]com.zaxxer.hikari.HikariDataSource.getConnection:123 -HikariPool-1 - Start completed.
+2020-04-25 20:06:16.417 INFO  [http-nio-8080-exec-3]com.lyq.blog.aop.aspect.LogAspect.doAround:64 -耗时 : 580
+2020-04-25 20:06:16.428 INFO  [http-nio-8080-exec-3]com.lyq.blog.aop.aspect.LogAspect.doAfterReturning:78 -返回值：{"code":0,"data":{"accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJmYzdlZjkyMTMwMzEwOTMxNWZiYTY1ZTJlZmUwYzU0OSMiLCJqd3RfdXNlcl9uYW1lX2tleV8iOiJhZG1pbiIsInN1YiI6ImFkbWluXzEyNTM0MDk2MjEyNjQwODQ5OTIiLCJqd3RfaXNfYWRtaW5fIjoxLCJleHAiOjE1ODc4MjM1NzYsImlhdCI6MTU4NzgxNjM3Nn0.VdhdSs9XwxMsQH4MiaPsXDFgTn0CHwHCcIOSViY4fOo","isAdmin":1,"refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJmYzdlZjkyMTMwMzEwOTMxNWZiYTY1ZTJlZmUwYzU0OSMiLCJqd3RfdXNlcl9uYW1lX2tleV8iOiJhZG1pbiIsInN1YiI6ImFkbWluXzEyNTM0MDk2MjEyNjQwODQ5OTIiLCJqd3RfaXNfYWRtaW5fIjoxLCJleHAiOjE1ODc4NDUxNzYsImlhdCI6MTU4NzgxNjM3Nn0.EJZpKGWCrJca1rrMlE-W2EKWHdmdepJHlHggNwyTL4c","userName":"admin"},"msg":"登录成功"}
+2020-04-25 20:06:16.441 ERROR [http-nio-8080-exec-3]com.lyq.blog.utils.jwt.JwtTokenUtil.getUserId:121 -jwt-getUserId(获取用户id错误信息): 
+java.lang.NullPointerException: null
+	at com.lyq.blog.utils.jwt.JwtTokenUtil.getUserId(JwtTokenUtil.java:119)
+	at com.lyq.blog.config.mp.MetaHandler.insertFill(MetaHandler.java:28)
+	at com.baomidou.mybatisplus.core.MybatisDefaultParameterHandler.lambda$insertFill$1(MybatisDefaultParameterHandler.java:179)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at com.baomidou.mybatisplus.core.MybatisDefaultParameterHandler.insertFill(MybatisDefaultParameterHandler.java:176)
+	at com.baomidou.mybatisplus.core.MybatisDefaultParameterHandler.process(MybatisDefaultParameterHandler.java:111)
+	at com.baomidou.mybatisplus.core.MybatisDefaultParameterHandler.processParameter(MybatisDefaultParameterHandler.java:84)
+	at com.baomidou.mybatisplus.core.MybatisDefaultParameterHandler.<init>(MybatisDefaultParameterHandler.java:55)
+	at com.baomidou.mybatisplus.core.MybatisXMLLanguageDriver.createParameterHandler(MybatisXMLLanguageDriver.java:34)
+	at com.baomidou.mybatisplus.core.MybatisXMLLanguageDriver.createParameterHandler(MybatisXMLLanguageDriver.java:28)
+	at org.apache.ibatis.session.Configuration.newParameterHandler(Configuration.java:579)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.<init>(BaseStatementHandler.java:69)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.<init>(PreparedStatementHandler.java:41)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.<init>(RoutingStatementHandler.java:46)
+	at org.apache.ibatis.session.Configuration.newStatementHandler(Configuration.java:592)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doUpdate(MybatisSimpleExecutor.java:52)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.update(MybatisCachingExecutor.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at com.baomidou.mybatisplus.extension.plugins.OptimisticLockerInterceptor.intercept(OptimisticLockerInterceptor.java:69)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy135.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy95.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:60)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:96)
+	at com.sun.proxy.$Proxy96.insert(Unknown Source)
+	at com.baomidou.mybatisplus.extension.service.IService.save(IService.java:59)
+	at com.baomidou.mybatisplus.extension.service.IService$$FastClassBySpringCGLIB$$f8525d18.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:687)
+	at com.lyq.blog.service.impl.LogServiceImpl$$EnhancerBySpringCGLIB$$6b24fa32.save(<generated>)
+	at com.lyq.blog.aop.aspect.LogAspect.doAfterReturning(LogAspect.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:626)
+	at org.springframework.aop.aspectj.AspectJAfterReturningAdvice.afterReturning(AspectJAfterReturningAdvice.java:66)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.lyq.blog.controller.UserController$$EnhancerBySpringCGLIB$$1728e172.login(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-25 20:06:31.169 INFO  [http-nio-8080-exec-4]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：GET
+2020-04-25 20:06:31.170 INFO  [http-nio-8080-exec-4]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /api/user/user_1253932172478296064
+2020-04-25 20:06:31.254 INFO  [http-nio-8080-exec-4]com.lyq.blog.config.shiro.custom.CusAuthorizingRealm.isPermitted:57 -当前操作的用户id是:admin_1253409621264084992,用户身份:管理员
+2020-04-25 20:06:31.255 INFO  [http-nio-8080-exec-4]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:108 -请求地址 : /api/user/user_1253932172478296064
+2020-04-25 20:06:31.255 INFO  [http-nio-8080-exec-4]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:109 -请求方式 : GET
+2020-04-25 20:06:31.256 INFO  [http-nio-8080-exec-4]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:112 -IP : 0:0:0:0:0:0:0:1
+2020-04-25 20:06:31.258 INFO  [http-nio-8080-exec-4]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:114 -方法 : com.lyq.blog.controller.UserController.getUserById
+2020-04-25 20:06:31.259 INFO  [http-nio-8080-exec-4]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:116 -请求参数：[user_1253932172478296064]
+2020-04-25 20:06:31.266 INFO  [http-nio-8080-exec-4]com.lyq.blog.aop.aspect.LogAspect.doAround:64 -耗时 : 11
+2020-04-25 20:06:31.276 INFO  [http-nio-8080-exec-4]com.lyq.blog.aop.aspect.LogAspect.doAfterReturning:78 -返回值：{"code":0,"data":{"avatar":"rBCyTV6j1q2ASW0-AABhJqR63ls288.jpg","createAt":1587801251000,"createBy":"admin_1253409621264084992","email":"110@163.com","nickName":"傻逼的 世界 只有武藏明白","phone":"110","sex":1,"userId":"user_1253932172478296064","userName":"yyy","version":4},"msg":"查询成功"}
+2020-04-25 20:06:38.137 INFO  [http-nio-8080-exec-5]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:108 -请求地址 : /api/user/login
+2020-04-25 20:06:38.138 INFO  [http-nio-8080-exec-5]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:109 -请求方式 : POST
+2020-04-25 20:06:38.138 INFO  [http-nio-8080-exec-5]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:112 -IP : 0:0:0:0:0:0:0:1
+2020-04-25 20:06:38.138 INFO  [http-nio-8080-exec-5]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:114 -方法 : com.lyq.blog.controller.UserController.login
+2020-04-25 20:06:38.139 INFO  [http-nio-8080-exec-5]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:116 -请求参数：[UserLoginReqVo(userName=yyy, password=111222)]
+2020-04-25 20:06:38.145 INFO  [http-nio-8080-exec-5]com.lyq.blog.aop.aspect.LogAspect.doAround:64 -耗时 : 8
+2020-04-25 20:06:38.145 INFO  [http-nio-8080-exec-5]com.lyq.blog.aop.aspect.LogAspect.doAfterReturning:78 -返回值：{"code":0,"data":{"accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJmYzdlZjkyMTMwMzEwOTMxNWZiYTY1ZTJlZmUwYzU0OSMiLCJqd3RfdXNlcl9uYW1lX2tleV8iOiJ5eXkiLCJzdWIiOiJ1c2VyXzEyNTM5MzIxNzI0NzgyOTYwNjQiLCJqd3RfaXNfYWRtaW5fIjowLCJleHAiOjE1ODc4MjM1OTgsImlhdCI6MTU4NzgxNjM5OH0.AYeF33UCgqH9cbx2vAyUVdCcIiXH4jK13w2qTZqkSrs","isAdmin":0,"refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJmYzdlZjkyMTMwMzEwOTMxNWZiYTY1ZTJlZmUwYzU0OSMiLCJqd3RfdXNlcl9uYW1lX2tleV8iOiJ5eXkiLCJzdWIiOiJ1c2VyXzEyNTM5MzIxNzI0NzgyOTYwNjQiLCJqd3RfaXNfYWRtaW5fIjowLCJleHAiOjE1ODc4NDUxOTgsImlhdCI6MTU4NzgxNjM5OH0.j2IkeoJHT3tyODzj4aIw2GI0Az8KFG24hO2K3slaYGE","userName":"yyy"},"msg":"登录成功"}
+2020-04-25 20:07:22.580 INFO  [http-nio-8080-exec-6]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：PUT
+2020-04-25 20:07:22.580 INFO  [http-nio-8080-exec-6]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /api/user/resetpwd
+2020-04-25 20:07:22.641 INFO  [http-nio-8080-exec-6]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:108 -请求地址 : /api/user/resetpwd
+2020-04-25 20:07:22.641 INFO  [http-nio-8080-exec-6]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:109 -请求方式 : PUT
+2020-04-25 20:07:22.641 INFO  [http-nio-8080-exec-6]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:112 -IP : 0:0:0:0:0:0:0:1
+2020-04-25 20:07:22.642 INFO  [http-nio-8080-exec-6]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:114 -方法 : com.lyq.blog.controller.UserController.userResetPwd
+2020-04-25 20:07:22.642 INFO  [http-nio-8080-exec-6]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:116 -请求参数：[UserResetPwdReqVo(oldPassword=111222, newPassword=123456), org.apache.shiro.web.servlet.ShiroHttpServletRequest@3afccb27]
+2020-04-25 20:07:22.778 INFO  [http-nio-8080-exec-6]com.lyq.blog.aop.aspect.LogAspect.doAround:64 -耗时 : 137
+2020-04-25 20:07:22.779 INFO  [http-nio-8080-exec-6]com.lyq.blog.aop.aspect.LogAspect.doAfterReturning:78 -返回值：{"code":0,"msg":"重置密码成功"}
+2020-04-25 20:07:36.723 INFO  [http-nio-8080-exec-7]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：GET
+2020-04-25 20:07:36.723 INFO  [http-nio-8080-exec-7]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /api/user/user_1253932172478296064
+2020-04-25 20:07:36.919 INFO  [http-nio-8080-exec-7]com.lyq.blog.config.shiro.custom.CusAuthorizingRealm.isPermitted:57 -当前操作的用户id是:admin_1253409621264084992,用户身份:管理员
+2020-04-25 20:07:36.920 INFO  [http-nio-8080-exec-7]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:108 -请求地址 : /api/user/user_1253932172478296064
+2020-04-25 20:07:36.921 INFO  [http-nio-8080-exec-7]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:109 -请求方式 : GET
+2020-04-25 20:07:36.921 INFO  [http-nio-8080-exec-7]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:112 -IP : 0:0:0:0:0:0:0:1
+2020-04-25 20:07:36.922 INFO  [http-nio-8080-exec-7]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:114 -方法 : com.lyq.blog.controller.UserController.getUserById
+2020-04-25 20:07:36.922 INFO  [http-nio-8080-exec-7]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:116 -请求参数：[user_1253932172478296064]
+2020-04-25 20:07:36.930 INFO  [http-nio-8080-exec-7]com.lyq.blog.aop.aspect.LogAspect.doAround:64 -耗时 : 10
+2020-04-25 20:07:36.930 INFO  [http-nio-8080-exec-7]com.lyq.blog.aop.aspect.LogAspect.doAfterReturning:78 -返回值：{"code":0,"data":{"avatar":"rBCyTV6j1q2ASW0-AABhJqR63ls288.jpg","createAt":1587816442000,"createBy":"admin_1253409621264084992","email":"110@163.com","nickName":"傻逼的 世界 只有武藏明白","phone":"110","sex":1,"userId":"user_1253932172478296064","userName":"yyy","version":5},"msg":"查询成功"}
+2020-04-25 20:07:38.800 INFO  [http-nio-8080-exec-8]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：GET
+2020-04-25 20:07:38.800 INFO  [http-nio-8080-exec-8]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /api/user/user_1253932172478296064
+2020-04-25 20:07:38.852 INFO  [http-nio-8080-exec-8]com.lyq.blog.config.shiro.custom.CusAuthorizingRealm.isPermitted:57 -当前操作的用户id是:admin_1253409621264084992,用户身份:管理员
+2020-04-25 20:07:38.852 INFO  [http-nio-8080-exec-8]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:108 -请求地址 : /api/user/user_1253932172478296064
+2020-04-25 20:07:38.852 INFO  [http-nio-8080-exec-8]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:109 -请求方式 : GET
+2020-04-25 20:07:38.853 INFO  [http-nio-8080-exec-8]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:112 -IP : 0:0:0:0:0:0:0:1
+2020-04-25 20:07:38.853 INFO  [http-nio-8080-exec-8]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:114 -方法 : com.lyq.blog.controller.UserController.getUserById
+2020-04-25 20:07:38.853 INFO  [http-nio-8080-exec-8]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:116 -请求参数：[user_1253932172478296064]
+2020-04-25 20:07:38.858 INFO  [http-nio-8080-exec-8]com.lyq.blog.aop.aspect.LogAspect.doAround:64 -耗时 : 6
+2020-04-25 20:07:38.859 INFO  [http-nio-8080-exec-8]com.lyq.blog.aop.aspect.LogAspect.doAfterReturning:78 -返回值：{"code":0,"data":{"avatar":"rBCyTV6j1q2ASW0-AABhJqR63ls288.jpg","createAt":1587816442000,"createBy":"admin_1253409621264084992","email":"110@163.com","nickName":"傻逼的 世界 只有武藏明白","phone":"110","sex":1,"userId":"user_1253932172478296064","userName":"yyy","version":5},"msg":"查询成功"}
+2020-04-25 20:08:57.748 INFO  [http-nio-8080-exec-2]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：PUT
+2020-04-25 20:08:57.748 INFO  [http-nio-8080-exec-2]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /api/user
+2020-04-25 20:08:57.780 WARN  [http-nio-8080-exec-2]org.apache.shiro.authc.AbstractAuthenticator.authenticate:216 -Authentication failed for token submission [com.lyq.blog.config.shiro.custom.CusUsernamePasswordToken - null, rememberMe=false].  Possible unexpected error? (Typical or expected login exceptions should extend from AuthenticationException).
+com.lyq.blog.exception.BusinessException: 用户未登录，请重新登录
+	at com.lyq.blog.config.shiro.custom.CusHashedCredentialMatcher.doCredentialsMatch(CusHashedCredentialMatcher.java:41)
+	at org.apache.shiro.realm.AuthenticatingRealm.assertCredentialsMatch(AuthenticatingRealm.java:600)
+	at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:581)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:273)
+	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198)
+	at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106)
+	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:275)
+	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:260)
+	at com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied(CusAccessControlFilter.java:52)
+	at org.apache.shiro.web.filter.AccessControlFilter.onAccessDenied(AccessControlFilter.java:133)
+	at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162)
+	at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:214)
+	at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:189)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)

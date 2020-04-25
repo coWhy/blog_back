@@ -154,7 +154,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         user.setPassword(PasswordUtils.encode(vo.getPassword(), salt));
         user.setSalt(salt);
         if (!save(user)) {
-            throw new BusinessException(ResponseCode.SYSTEM_ERROR);
+            throw new BusinessException(ResponseCode.OPERATION_ERROR);
         }
     }
 
@@ -296,17 +296,17 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
      */
     @Override
     public void batchResetUserPwd(List<String> ids) {
+        // 先查询后更新
         List<User> userList = userMapper.selectBatchIds(ids);
         if (userList.isEmpty()) {
             throw new BusinessException(ResponseCode.DATA_INCOMING_ERROR);
         }
         userList.forEach(user -> {
-            String newPassword = PasswordUtils.encode(Constant.USER_RESET_PWD, user.getSalt());
-            user.setPassword(newPassword);
+            user.setPassword(PasswordUtils.encode(Constant.USER_RESET_PWD, user.getSalt()));
             user.setVersion(user.getVersion());
             // 假如更新失败 就抛出错误信息
             if (!updateById(user)) {
-                throw new BusinessException(ResponseCode.SYSTEM_ERROR);
+                throw new BusinessException(ResponseCode.OPERATION_ERROR);
             }
 
         });
@@ -320,12 +320,13 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     @Override
     public void updateUserSelfInfo(UserUpdateReqVo vo) {
         //先查询后再进行更新
-        User user = getOne(new QueryWrapper<User>()
+        User user = userMapper.selectOne(new QueryWrapper<User>()
                 .select("version")
                 .eq("user_id", vo.getUserId())
                 .eq("is_admin", StateEnums.USER.getCode())
                 .eq("deleted", StateEnums.NOT_DELETED.getCode())
-        );;
+        );
+        ;
         if (user == null) {
             throw new BusinessException(ResponseCode.DATA_INCOMING_ERROR);
         }
@@ -333,8 +334,46 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         user.setVersion(user.getVersion());
         // 假如更新失败 就抛出错误信息
         if (!updateById(user)) {
-            throw new BusinessException(ResponseCode.SYSTEM_ERROR);
+            throw new BusinessException(ResponseCode.OPERATION_ERROR);
         }
 
     }
+
+    /**
+     * 用户重设个人密码接口
+     *
+     * @param vo           UserResetPwdReqVo
+     * @param accessToken  访问token
+     * @param refreshToken 刷新token
+     */
+    @Override
+    public void userResetPwd(UserResetPwdReqVo vo, String accessToken, String refreshToken) {
+        String userId = JwtTokenUtil.getUserId(accessToken);
+        User user = userMapper.selectOne(new QueryWrapper<User>()
+                .select("user_id", "salt", "password", "version")
+                .eq("user_id", userId)
+                .eq("deleted", StateEnums.NOT_DELETED.getCode())
+        );
+        if (user == null) {
+            throw new BusinessException(ResponseCode.TOKEN_ERROR);
+        }
+        // 校验旧密码
+        if (!PasswordUtils.matches(user.getSalt(), vo.getOldPassword(), user.getPassword())) {
+            throw new BusinessException(ResponseCode.ACCOUNT_OLD_PWD_NOT_CORRECT);
+        }
+        //保存新密码
+        user.setPassword(PasswordUtils.encode(vo.getNewPassword(), user.getSalt()));
+        user.setVersion(user.getVersion());
+        if (!updateById(user)) {
+            throw new BusinessException(ResponseCode.OPERATION_ERROR);
+        }
+        // accessToken 拉入redis 黑名单 禁止再访问我们的系统资源
+        redisService.set(Constant.JWT_ACCESS_TOKEN_BLACKLIST + accessToken, userId,
+                JwtTokenUtil.getRemainingTime(accessToken), TimeUnit.MILLISECONDS);
+        // refreshToken 拉入redis 黑名单 禁止再访问我们的系统资源
+        redisService.set(Constant.JWT_REFRESH_TOKEN_BLACKLIST + refreshToken, userId,
+                JwtTokenUtil.getRemainingTime(refreshToken), TimeUnit.MILLISECONDS);
+
+    }
+
 }

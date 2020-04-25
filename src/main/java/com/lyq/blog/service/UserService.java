@@ -91,4 +91,14 @@ public interface UserService extends IService<User> {
      */
     void updateUserSelfInfo(UserUpdateReqVo vo);
 
+    /**
+     * 用户重设个人密码接口
+     *
+     * @param vo           UserResetPwdReqVo
+     * @param accessToken  访问token
+     * @param refreshToken 刷新token
+     */
+    void userResetPwd(UserResetPwdReqVo vo, String accessToken, String refreshToken);
+
+
 }

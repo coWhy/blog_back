@@ -190,4 +190,23 @@ public class UserController {
         return result;
     }
 
+    /**
+     * 用户重设个人密码接口
+     * 这个地方的接口 管理员 和 用户 都可以用 因为只有登录了 才会有token 对于权限 已经很明确了
+     *
+     * @param vo UserResetPwdReqVo
+     * @return CommonResult<Object>
+     */
+    @PutMapping("/user/resetpwd")
+    public CommonResult<Object> userResetPwd(@RequestBody @Valid UserResetPwdReqVo vo, HttpServletRequest req) {
+        // 由于更新个密码 是敏感操作 所以 需要重新刷新所有token 刷新 办法 就是引导重新登录 将过去的token拉入redis黑名单
+        String accessToken = req.getHeader(Constant.ACCESS_TOKEN);
+        String refreshToken = req.getHeader(Constant.REFRESH_TOKEN);
+        userService.userResetPwd(vo, accessToken, refreshToken);
+        CommonResult result = new CommonResult();
+        result.setMsg(ResponseCode.RESET_PWD_SUCCESS.getMsg());
+        return result;
+    }
+
+
 }
