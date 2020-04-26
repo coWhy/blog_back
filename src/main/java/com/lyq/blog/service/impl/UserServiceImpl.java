@@ -52,15 +52,15 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     /**
      * 根据用户名查询用户 全部信息
      *
-     * @param userName 用户名
+     * @param username 用户名
      * @return User
      */
-    private User getUserInfoByUserName(String userName) {
-        if (StringUtils.isBlank(userName)) {
+    private User getUserInfoByUserName(String username) {
+        if (StringUtils.isBlank(username)) {
             throw new BusinessException(ResponseCode.DATA_INCOMING_ERROR);
         }
         return userMapper.selectOne(new QueryWrapper<User>()
-                .eq("user_name", userName)
+                .eq("username", username)
         );
     }
 
@@ -83,7 +83,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
      */
     @Override
     public UserLoginRespVo login(UserLoginReqVo vo) {
-        User loginUser = getUserInfoByUserName(vo.getUserName());
+        User loginUser = getUserInfoByUserName(vo.getUsername());
         //1.用户不存在
         if (loginUser == null) {
             throw new BusinessException(ResponseCode.ACCOUNT_ERROR);
@@ -97,7 +97,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         //subject 一般存放用户id 也就是 这里的userId
         Map<String, Object> claims = new HashMap<>(2);
         //存入账号信息 userName 和 权限信息 isAdmin
-        claims.put(Constant.JWT_USER_NAME, loginUser.getUserName());
+        claims.put(Constant.JWT_USER_NAME, loginUser.getUsername());
         claims.put(Constant.JWT_IS_ADMIN, loginUser.getIsAdmin());
         //生成token
         String accessToken = JwtTokenUtil.getAccessToken(loginUser.getUserId(), claims);
@@ -105,7 +105,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         return new UserLoginRespVo()
                 .setAccessToken(accessToken)
                 .setRefreshToken(refreshToken)
-                .setUserName(loginUser.getUserName())
+                .setUsername(loginUser.getUsername())
                 .setAvatar(loginUser.getAvatar())
                 .setIsAdmin(loginUser.getIsAdmin());
     }
@@ -122,7 +122,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
             throw new BusinessException(ResponseCode.DATA_INCOMING_ERROR);
         }
         User user = userMapper.selectOne(new QueryWrapper<User>()
-                .select("user_id", "user_name", "nick_name", "avatar"
+                .select("user_id", "username", "nick_name", "avatar"
                         , "sex", "phone", "email",
                         "create_at", "create_by", "version")
                 .eq("user_id", id)
@@ -143,7 +143,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     @Override
     public void addUser(UserAddReqVo vo) {
         // 先根据用户名查询 用户是否存在  包括管理员 和 已经删除的用户群体
-        User user = getUserInfoByUserName(vo.getUserName());
+        User user = getUserInfoByUserName(vo.getUsername());
         if (user != null) {
             throw new BusinessException(ResponseCode.ACCOUNT_HAS_BEEN_REGISTERD);
         }
@@ -151,7 +151,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         BeanUtils.copyProperties(vo, user);
         // 获取一个盐值
         String salt = PasswordUtils.getSalt();
-        user.setUserId("user_" + idWorker.nextId());
+        user.setUserId("USER_" + idWorker.nextId());
         user.setPassword(PasswordUtils.encode(vo.getPassword(), salt));
         user.setSalt(salt);
         if (!save(user)) {
@@ -202,8 +202,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     @Override
     public Page<User> getUsersByPage(UserPageReqVo vo) {
         Page<User> userPage = userMapper.selectPage(new Page<User>(vo.getPageNum(), vo.getPageSize()), new QueryWrapper<User>()
-                .select("user_id", "user_name", "nick_name", "avatar", "sex", "phone", "email", "create_at", "create_by")
-                .like(StringUtils.isNotBlank(vo.getUserName()), "user_name", vo.getUserName())
+                .select("user_id", "username", "nick_name", "avatar", "sex", "phone", "email", "create_at", "create_by")
+                .like(StringUtils.isNotBlank(vo.getUsername()), "username", vo.getUsername())
                 .like(StringUtils.isNotBlank(vo.getPhone()), "phone", vo.getPhone())
                 .like(StringUtils.isNotBlank(vo.getEmail()), "email", vo.getEmail())
                 .eq("is_admin", StateEnums.USER.getCode())
@@ -278,12 +278,12 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         if (redisService.hasKey(Constant.JWT_REFRESH_KEY + userId)) {
             claims = new HashMap<>(2);
             User refreshUser = userMapper.selectOne(new QueryWrapper<User>()
-                    .select("user_id", "user_name", "is_admin")
+                    .select("user_id", "username", "is_admin")
                     .eq("user_id", userId)
                     .eq("deleted", StateEnums.NOT_DELETED.getCode())
             );
             //重新存入账号信息 userName 和 权限信息 isAdmin
-            claims.put(Constant.JWT_USER_NAME, refreshUser.getUserName());
+            claims.put(Constant.JWT_USER_NAME, refreshUser.getUsername());
             claims.put(Constant.JWT_IS_ADMIN, refreshUser.getIsAdmin());
         }
         // 返回 重新生成的accessToken

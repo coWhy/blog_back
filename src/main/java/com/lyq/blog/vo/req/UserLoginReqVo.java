@@ -14,7 +14,7 @@ import javax.validation.constraints.NotBlank;
 @Data
 public class UserLoginReqVo {
     @NotBlank(message = "账号不能为空")
-    private String userName;
+    private String username;
     @NotBlank(message = "登录密码不能为空")
     private String password;
 }

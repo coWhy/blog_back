@@ -23,7 +23,7 @@ public class UserLoginRespVo {
     /**
      * 用户名
      */
-    private String userName;
+    private String username;
 
     /**
      * 用户头像
@@ -44,8 +44,8 @@ public class UserLoginRespVo {
         return this;
     }
 
-    public UserLoginRespVo setUserName(String userName) {
-        this.userName = userName;
+    public UserLoginRespVo setUsername(String username) {
+        this.username = username;
         return this;
     }
 

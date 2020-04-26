@@ -32,8 +32,8 @@ public class User implements Serializable {
     /**
      * 用户名 必填
      */
-    @TableField(value = "user_name")
-    private String userName;
+    @TableField(value = "username")
+    private String username;
 
     /**
      * 加密盐值 必填
@@ -133,7 +133,7 @@ public class User implements Serializable {
 
     public static final String COL_IS_ADMIN = "is_admin";
 
-    public static final String COL_USER_NAME = "user_name";
+    public static final String COL_USERNAME = "username";
 
     public static final String COL_SALT = "salt";
 

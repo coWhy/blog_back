@@ -15,7 +15,7 @@ import javax.validation.constraints.NotNull;
 @Data
 public class UserRegisterReqVo {
     @NotBlank(message = "用户名不能为空")
-    private String userName;
+    private String username;
 
     @NotBlank(message = "登录密码不能为空")
     private String password;

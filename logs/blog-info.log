@@ -69,3 +69,139 @@
 2020-04-26 02:42:39.894 INFO  [http-nio-8080-exec-5]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /user/login
 2020-04-26 04:05:52.718 INFO  [SpringContextShutdownHook]o.s.jmx.export.annotation.AnnotationMBeanExporter.doUnregister:211 -Could not unregister MBean [com.github.tobato.fastdfs.domain.conn:name=fdfsConnectionPool,type=FdfsConnectionPool] as said MBean is not registered (perhaps already unregistered by an external process)
 2020-04-26 04:05:52.719 INFO  [SpringContextShutdownHook]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:218 -Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-26 13:46:25.132 INFO  [main]com.lyq.blog.BlogBackApplication.logStarting:55 -Starting BlogBackApplication on JaydeMacBook-Pro.local with PID 17067 (/Users/jay/Desktop/idea_codes/博客/后端v2/blog-back/target/classes started by jay in /Users/jay/Desktop/idea_codes/博客/后端v2/blog-back)
+2020-04-26 13:46:25.136 INFO  [main]com.lyq.blog.BlogBackApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-04-26 13:46:26.138 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:249 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-26 13:46:26.140 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-04-26 13:46:26.181 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 26ms. Found 0 Redis repository interfaces.
+2020-04-26 13:46:26.467 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'shiroConfig' of type [com.lyq.blog.config.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$3d119119] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-26 13:46:26.747 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisConfig' of type [com.lyq.blog.config.redis.RedisConfig$$EnhancerBySpringCGLIB$$b3fa802d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-26 13:46:26.777 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-26 13:46:26.786 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-26 13:46:26.875 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-26 13:46:27.102 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-26 13:46:27.313 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisTemplate' of type [org.springframework.data.redis.core.RedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-26 13:46:27.430 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisService' of type [com.lyq.blog.service.RedisService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-26 13:46:27.433 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'cusHashedCredentialMatcher' of type [com.lyq.blog.config.shiro.custom.CusHashedCredentialMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-26 13:46:27.443 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'cusAuthorizingRealm' of type [com.lyq.blog.config.shiro.custom.CusAuthorizingRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-26 13:46:27.477 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-26 13:46:27.518 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-26 13:46:28.026 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8080 (http)
+2020-04-26 13:46:28.036 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-26 13:46:28.036 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-04-26 13:46:28.037 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-26 13:46:28.124 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-04-26 13:46:28.124 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 2843 ms
+2020-04-26 13:46:29.277 INFO  [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:181 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-26 13:46:29.817 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2020-04-26 13:46:29.853 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-26 13:46:29.857 INFO  [main]com.lyq.blog.BlogBackApplication.logStarted:61 -Started BlogBackApplication in 5.895 seconds (JVM running for 6.763)
+2020-04-26 13:46:43.148 INFO  [http-nio-8080-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-26 13:46:43.149 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2020-04-26 13:46:43.159 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 10 ms
+2020-04-26 13:46:43.179 INFO  [http-nio-8080-exec-1]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 13:46:43.179 INFO  [http-nio-8080-exec-1]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /vue-admin-template/user/login
+2020-04-26 13:46:45.324 INFO  [http-nio-8080-exec-2]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 13:46:45.324 INFO  [http-nio-8080-exec-2]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /vue-admin-template/user/login
+2020-04-26 14:09:27.963 INFO  [http-nio-8080-exec-3]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 14:09:27.963 INFO  [http-nio-8080-exec-3]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /user/login
+2020-04-26 14:09:36.828 INFO  [http-nio-8080-exec-4]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 14:09:36.829 INFO  [http-nio-8080-exec-4]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /user/login
+2020-04-26 14:10:46.595 INFO  [http-nio-8080-exec-5]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 14:10:46.596 INFO  [http-nio-8080-exec-5]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /user/login
+2020-04-26 14:15:24.530 INFO  [http-nio-8080-exec-7]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 14:15:24.530 INFO  [http-nio-8080-exec-7]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /user/login
+2020-04-26 14:15:37.543 INFO  [http-nio-8080-exec-8]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 14:15:37.544 INFO  [http-nio-8080-exec-8]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /user/login
+2020-04-26 14:16:05.651 INFO  [http-nio-8080-exec-10]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 14:16:05.652 INFO  [http-nio-8080-exec-10]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /user/login
+2020-04-26 14:25:22.776 INFO  [http-nio-8080-exec-9]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 14:25:22.776 INFO  [http-nio-8080-exec-9]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /user/login
+2020-04-26 14:26:28.936 INFO  [http-nio-8080-exec-1]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 14:26:28.936 INFO  [http-nio-8080-exec-1]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /user/login
+2020-04-26 14:28:21.816 INFO  [SpringContextShutdownHook]o.s.jmx.export.annotation.AnnotationMBeanExporter.doUnregister:211 -Could not unregister MBean [com.github.tobato.fastdfs.domain.conn:name=fdfsConnectionPool,type=FdfsConnectionPool] as said MBean is not registered (perhaps already unregistered by an external process)
+2020-04-26 14:28:21.817 INFO  [SpringContextShutdownHook]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:218 -Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-26 14:36:02.914 INFO  [main]com.lyq.blog.BlogBackApplication.logStarting:55 -Starting BlogBackApplication on JaydeMacBook-Pro.local with PID 17563 (/Users/jay/Desktop/idea_codes/博客/后端v2/blog-back/target/classes started by jay in /Users/jay/Desktop/idea_codes/博客/后端v2/blog-back)
+2020-04-26 14:36:02.917 INFO  [main]com.lyq.blog.BlogBackApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-04-26 14:36:03.593 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:249 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-26 14:36:03.595 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-04-26 14:36:03.628 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 21ms. Found 0 Redis repository interfaces.
+2020-04-26 14:36:03.869 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'shiroConfig' of type [com.lyq.blog.config.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$c18e4bb8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-26 14:36:04.114 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisConfig' of type [com.lyq.blog.config.redis.RedisConfig$$EnhancerBySpringCGLIB$$38773acc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-26 14:36:04.133 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-26 14:36:04.142 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-26 14:36:04.199 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-26 14:36:04.327 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-26 14:36:04.400 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisTemplate' of type [org.springframework.data.redis.core.RedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-26 14:36:04.462 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'redisService' of type [com.lyq.blog.service.RedisService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-26 14:36:04.465 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'cusHashedCredentialMatcher' of type [com.lyq.blog.config.shiro.custom.CusHashedCredentialMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-26 14:36:04.471 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'cusAuthorizingRealm' of type [com.lyq.blog.config.shiro.custom.CusAuthorizingRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-26 14:36:04.487 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-26 14:36:04.509 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-26 14:36:04.822 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8080 (http)
+2020-04-26 14:36:04.829 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-26 14:36:04.830 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-04-26 14:36:04.830 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-26 14:36:04.899 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-04-26 14:36:04.900 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 1934 ms
+2020-04-26 14:36:06.320 INFO  [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:181 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-26 14:36:07.197 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2020-04-26 14:36:07.234 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-26 14:36:07.237 INFO  [main]com.lyq.blog.BlogBackApplication.logStarted:61 -Started BlogBackApplication in 5.057 seconds (JVM running for 5.634)
+2020-04-26 14:36:14.661 INFO  [http-nio-8080-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-26 14:36:14.661 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2020-04-26 14:36:14.676 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 15 ms
+2020-04-26 14:36:14.845 INFO  [http-nio-8080-exec-1]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:108 -请求地址 : /api/user/login
+2020-04-26 14:36:14.845 INFO  [http-nio-8080-exec-1]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:109 -请求方式 : POST
+2020-04-26 14:36:14.849 INFO  [http-nio-8080-exec-1]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:112 -IP : 0:0:0:0:0:0:0:1
+2020-04-26 14:36:14.852 INFO  [http-nio-8080-exec-1]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:114 -方法 : com.lyq.blog.controller.UserController.login
+2020-04-26 14:36:14.853 INFO  [http-nio-8080-exec-1]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:116 -请求参数：[UserLoginReqVo(username=yyy, password=111222)]
+2020-04-26 14:36:14.973 INFO  [http-nio-8080-exec-1]com.zaxxer.hikari.HikariDataSource.getConnection:110 -HikariPool-1 - Starting...
+2020-04-26 14:36:15.176 INFO  [http-nio-8080-exec-1]com.zaxxer.hikari.HikariDataSource.getConnection:123 -HikariPool-1 - Start completed.
+2020-04-26 14:36:20.894 INFO  [http-nio-8080-exec-3]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:108 -请求地址 : /api/user/login
+2020-04-26 14:36:20.894 INFO  [http-nio-8080-exec-3]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:109 -请求方式 : POST
+2020-04-26 14:36:20.894 INFO  [http-nio-8080-exec-3]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:112 -IP : 0:0:0:0:0:0:0:1
+2020-04-26 14:36:20.895 INFO  [http-nio-8080-exec-3]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:114 -方法 : com.lyq.blog.controller.UserController.login
+2020-04-26 14:36:20.895 INFO  [http-nio-8080-exec-3]com.lyq.blog.aop.aspect.LogAspect.printRequestLog:116 -请求参数：[UserLoginReqVo(username=yyy, password=123456)]
+2020-04-26 14:36:21.044 INFO  [http-nio-8080-exec-3]com.lyq.blog.aop.aspect.LogAspect.doAround:64 -耗时 : 150
+2020-04-26 14:36:21.143 INFO  [http-nio-8080-exec-3]com.lyq.blog.aop.aspect.LogAspect.doAfterReturning:78 -返回值：{"code":0,"data":{"accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJmYzdlZjkyMTMwMzEwOTMxNWZiYTY1ZTJlZmUwYzU0OSMiLCJqd3RfdXNlcl9uYW1lX2tleV8iOiJ5eXkiLCJzdWIiOiJ1c2VyXzEyNTM5MzIxNzI0NzgyOTYwNjQiLCJqd3RfaXNfYWRtaW5fIjowLCJleHAiOjE1ODc4OTAxODEsImlhdCI6MTU4Nzg4Mjk4MX0.j9L6NF1Jy5X-FmARH8Pfg8VPL4_7bdDHs_R8LF94nOQ","avatar":"rBCyTV6j1q2ASW0-AABhJqR63ls288.jpg","isAdmin":0,"refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJmYzdlZjkyMTMwMzEwOTMxNWZiYTY1ZTJlZmUwYzU0OSMiLCJqd3RfdXNlcl9uYW1lX2tleV8iOiJ5eXkiLCJzdWIiOiJ1c2VyXzEyNTM5MzIxNzI0NzgyOTYwNjQiLCJqd3RfaXNfYWRtaW5fIjowLCJleHAiOjE1ODc5MTE3ODEsImlhdCI6MTU4Nzg4Mjk4MX0.cRjJSG88kvZ0HWricqGID0Zn4e0PDc9aVPchA_pgErA","username":"yyy"},"msg":"登录成功"}
+2020-04-26 14:36:42.137 INFO  [http-nio-8080-exec-4]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 14:36:42.138 INFO  [http-nio-8080-exec-4]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /user/login
+2020-04-26 14:41:24.606 INFO  [http-nio-8080-exec-6]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 14:41:24.607 INFO  [http-nio-8080-exec-6]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /user/login
+2020-04-26 14:41:25.446 INFO  [http-nio-8080-exec-7]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 14:41:25.446 INFO  [http-nio-8080-exec-7]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /user/login
+2020-04-26 14:42:19.242 INFO  [http-nio-8080-exec-8]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 14:42:19.242 INFO  [http-nio-8080-exec-8]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /user/login
+2020-04-26 14:42:19.398 INFO  [http-nio-8080-exec-9]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 14:42:19.398 INFO  [http-nio-8080-exec-9]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /user/login
+2020-04-26 14:42:19.559 INFO  [http-nio-8080-exec-10]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 14:42:19.560 INFO  [http-nio-8080-exec-10]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /user/login
+2020-04-26 14:42:19.754 INFO  [http-nio-8080-exec-2]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 14:42:19.755 INFO  [http-nio-8080-exec-2]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /user/login
+2020-04-26 14:42:19.939 INFO  [http-nio-8080-exec-1]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 14:42:19.939 INFO  [http-nio-8080-exec-1]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /user/login
+2020-04-26 14:42:20.133 INFO  [http-nio-8080-exec-3]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 14:42:20.134 INFO  [http-nio-8080-exec-3]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /user/login
+2020-04-26 14:42:20.345 INFO  [http-nio-8080-exec-4]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 14:42:20.345 INFO  [http-nio-8080-exec-4]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /user/login
+2020-04-26 14:42:20.542 INFO  [http-nio-8080-exec-5]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 14:42:20.542 INFO  [http-nio-8080-exec-5]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /user/login
+2020-04-26 14:42:20.781 INFO  [http-nio-8080-exec-6]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 14:42:20.782 INFO  [http-nio-8080-exec-6]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /user/login
+2020-04-26 14:42:20.990 INFO  [http-nio-8080-exec-7]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 14:42:20.990 INFO  [http-nio-8080-exec-7]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /user/login
+2020-04-26 14:43:54.970 INFO  [http-nio-8080-exec-8]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 14:43:54.971 INFO  [http-nio-8080-exec-8]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /user/login
+2020-04-26 14:43:57.961 INFO  [http-nio-8080-exec-9]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 14:43:57.961 INFO  [http-nio-8080-exec-9]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /user/login
+2020-04-26 14:45:10.618 INFO  [http-nio-8080-exec-10]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 14:45:10.618 INFO  [http-nio-8080-exec-10]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /user/login
+2020-04-26 14:45:14.321 INFO  [http-nio-8080-exec-2]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 14:45:14.321 INFO  [http-nio-8080-exec-2]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /user/login
+2020-04-26 14:52:00.398 INFO  [http-nio-8080-exec-1]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:41 -请求方式：POST
+2020-04-26 14:52:00.398 INFO  [http-nio-8080-exec-1]com.lyq.blog.config.shiro.custom.CusAccessControlFilter.onAccessDenied:42 -拦截请求URI: /user/login
+2020-04-26 14:55:32.797 INFO  [SpringContextShutdownHook]o.s.jmx.export.annotation.AnnotationMBeanExporter.doUnregister:211 -Could not unregister MBean [com.github.tobato.fastdfs.domain.conn:name=fdfsConnectionPool,type=FdfsConnectionPool] as said MBean is not registered (perhaps already unregistered by an external process)
+2020-04-26 14:55:32.797 INFO  [SpringContextShutdownHook]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:218 -Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-26 14:55:32.798 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:350 -HikariPool-1 - Shutdown initiated...
+2020-04-26 14:55:32.806 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:352 -HikariPool-1 - Shutdown completed.
