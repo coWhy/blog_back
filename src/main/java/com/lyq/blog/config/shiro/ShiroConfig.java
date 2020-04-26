@@ -77,10 +77,13 @@ public class ShiroConfig {
         Map<String, String> filterChainDefinitionMap = new LinkedHashMap<>();
 
         // 配置不会被拦截的链接 顺序判断
+        // 用户登录接口
         filterChainDefinitionMap.put("/api/user/login", "anon");
+        // 新用户注册接口
         filterChainDefinitionMap.put("/api/user/register", "anon");
+        // 用户主动刷新 和 被动刷新接口
         filterChainDefinitionMap.put("/api/user/token", "anon");
-
+        // 测试使用接口
         filterChainDefinitionMap.put("/api/test", "anon");
 
         filterChainDefinitionMap.put("/**", "token,authc");

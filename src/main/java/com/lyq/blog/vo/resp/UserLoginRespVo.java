@@ -24,6 +24,11 @@ public class UserLoginRespVo {
      * 用户名
      */
     private String userName;
+
+    /**
+     * 用户头像
+     */
+    private String avatar;
     /**
      * 是否是管理员
      */
@@ -48,4 +53,10 @@ public class UserLoginRespVo {
         this.isAdmin = isAdmin;
         return this;
     }
+
+    public UserLoginRespVo setAvatar(String avatar) {
+        this.avatar = avatar;
+        return this;
+    }
+
 }

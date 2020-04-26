@@ -29,7 +29,9 @@ public enum ResponseCode implements ResponseCodeInterface {
     RESET_PWD_SUCCESS(0, "重置密码成功"),
     MODIFY_PWD_SUCCESS(0, "修改密码成功"),
     REFRESH_TOKEN_SUCCESS(0, "刷新token成功"),
+
     SYSTEM_ERROR(5000001, "系统异常请稍后再试"),
+
     DATA_INCOMING_ERROR(4000001, "数据传入异常"),
     DATA_CHECK_ANOMALY(4000002, "数据校验异常"),
     QUERY_DATA_ERROR(4000003, "查询不到您所需要的信息"),

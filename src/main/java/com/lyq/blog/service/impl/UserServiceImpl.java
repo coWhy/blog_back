@@ -106,6 +106,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
                 .setAccessToken(accessToken)
                 .setRefreshToken(refreshToken)
                 .setUserName(loginUser.getUserName())
+                .setAvatar(loginUser.getAvatar())
                 .setIsAdmin(loginUser.getIsAdmin());
     }
 
