@@ -100,5 +100,9 @@ public interface UserService extends IService<User> {
      */
     void userResetPwd(UserResetPwdReqVo vo, String accessToken, String refreshToken);
 
-
+    /**
+     * 获取管理员信息
+     * @return User
+     */
+    User getAdminInfo();
 }

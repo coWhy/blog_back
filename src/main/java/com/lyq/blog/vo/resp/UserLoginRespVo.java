@@ -21,15 +21,6 @@ public class UserLoginRespVo {
      */
     private String refreshToken;
     /**
-     * 用户名
-     */
-    private String username;
-
-    /**
-     * 用户头像
-     */
-    private String avatar;
-    /**
      * 是否是管理员
      */
     private Integer isAdmin;
@@ -44,19 +35,8 @@ public class UserLoginRespVo {
         return this;
     }
 
-    public UserLoginRespVo setUsername(String username) {
-        this.username = username;
-        return this;
-    }
-
     public UserLoginRespVo setIsAdmin(Integer isAdmin) {
         this.isAdmin = isAdmin;
         return this;
     }
-
-    public UserLoginRespVo setAvatar(String avatar) {
-        this.avatar = avatar;
-        return this;
-    }
-
 }

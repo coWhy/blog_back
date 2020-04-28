@@ -43,11 +43,13 @@ public enum ResponseCode implements ResponseCodeInterface {
     TOKEN_ERROR(4010001, "用户未登录，请重新登录"),
     ACCOUNT_HAS_BEEN_DELETED(4010001, "该账号已被注销,请联系管理员"),
     ACCOUNT_IS_NOT_ADMIN(4010001, "该用户不是管理员,没有权限访问该资源"),
-    NOT_DELETE_ADMIN(4010001, "管理员不能删除"),
     ACCOUNT_HAS_NOT_PERMISSIONS(4010001, "您不是管理员,不能访问该资源"),
-    USELESS_OPERATION(4010001, "当前操作对象不存在"),
+    TOKEN_PAST_DUE(4010001, "token失效，请刷新token"),
 
-    TOKEN_PAST_DUE(4010002, "token失效，请刷新token"),
+    NOT_DELETE_ADMIN(4010002, "管理员不能删除"),
+    USELESS_OPERATION(4010002, "当前操作对象不存在"),
+
+
     OPERATION_ERROR(4000005, "操作失败"),
 
     /**

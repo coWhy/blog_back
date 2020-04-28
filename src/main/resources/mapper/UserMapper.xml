@@ -7,6 +7,8 @@
         <id column="user_id" jdbcType="VARCHAR" property="userId"/>
         <result column="is_admin" jdbcType="INTEGER" property="isAdmin"/>
         <result column="username" jdbcType="VARCHAR" property="username"/>
+        <result column="real_name" jdbcType="VARCHAR" property="realName"/>
+        <result column="last_login_at" jdbcType="TIMESTAMP" property="lastLoginAt"/>
         <result column="salt" jdbcType="VARCHAR" property="salt"/>
         <result column="password" jdbcType="VARCHAR" property="password"/>
         <result column="sex" jdbcType="INTEGER" property="sex"/>
@@ -25,7 +27,7 @@
     </resultMap>
     <sql id="Base_Column_List">
         <!--@mbg.generated-->
-        user_id, is_admin, username, salt, `password`, sex, phone, email, avatar, nick_name,
+        user_id, is_admin, username, real_name. last_login_at, salt, `password`, sex, phone, email, avatar, nick_name,
         introduction, signature, create_at, create_by, update_at, update_by, version, deleted
     </sql>
 </mapper>

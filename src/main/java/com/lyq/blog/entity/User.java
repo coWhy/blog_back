@@ -36,6 +36,20 @@ public class User implements Serializable {
     private String username;
 
     /**
+     * 真实姓名
+     */
+    @TableField(value = "real_name")
+    private String realName;
+
+
+    /**
+     * 更新时间
+     */
+    @TableField(value = "last_login_at")
+    private Date lastLoginAt;
+
+
+    /**
      * 加密盐值 必填
      */
     @TableField(value = "salt")
@@ -134,6 +148,10 @@ public class User implements Serializable {
     public static final String COL_IS_ADMIN = "is_admin";
 
     public static final String COL_USERNAME = "username";
+
+    public static final String COL_REAL_NAME = "real_name";
+
+    public static final String COL_LAST_LOGIN_AT = "last_login_at";
 
     public static final String COL_SALT = "salt";
 

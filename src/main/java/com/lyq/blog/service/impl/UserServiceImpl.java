@@ -22,6 +22,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -102,11 +103,12 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         //生成token
         String accessToken = JwtTokenUtil.getAccessToken(loginUser.getUserId(), claims);
         String refreshToken = JwtTokenUtil.getRefreshToken(loginUser.getUserId(), claims);
+        // 更新登录时间
+        loginUser.setLastLoginAt(new Date());
+        updateById(loginUser);
         return new UserLoginRespVo()
                 .setAccessToken(accessToken)
                 .setRefreshToken(refreshToken)
-                .setUsername(loginUser.getUsername())
-                .setAvatar(loginUser.getAvatar())
                 .setIsAdmin(loginUser.getIsAdmin());
     }
 
@@ -122,8 +124,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
             throw new BusinessException(ResponseCode.DATA_INCOMING_ERROR);
         }
         User user = userMapper.selectOne(new QueryWrapper<User>()
-                .select("user_id", "username", "nick_name", "avatar"
-                        , "sex", "phone", "email",
+                .select("user_id", "real_name", "username", "nick_name", "avatar"
+                        , "sex", "phone", "email", "last_login_at",
                         "create_at", "create_by", "version")
                 .eq("user_id", id)
                 .eq("is_admin", StateEnums.USER.getCode())
@@ -180,6 +182,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         }
         // 获取当前注销用户的userId
         String userId = JwtTokenUtil.getUserId(accessToken);
+        System.err.println("当前注销的用户是:" + userId);
         // 将这两个token放入redis里面 等待 过期时间全部到达
         // 因为 jwt token 一旦签发 就不能销毁 除非到达了过期时间
         // 所以为了防止被人再次利用 所以 通过redis 存入key值 进行 二次拦截
@@ -202,7 +205,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     @Override
     public Page<User> getUsersByPage(UserPageReqVo vo) {
         Page<User> userPage = userMapper.selectPage(new Page<User>(vo.getPageNum(), vo.getPageSize()), new QueryWrapper<User>()
-                .select("user_id", "username", "nick_name", "avatar", "sex", "phone", "email", "create_at", "create_by")
+                .select("user_id", "username", "real_name", "nick_name", "avatar", "sex", "phone", "email", "last_login_at", "create_at", "create_by")
                 .like(StringUtils.isNotBlank(vo.getUsername()), "username", vo.getUsername())
                 .like(StringUtils.isNotBlank(vo.getPhone()), "phone", vo.getPhone())
                 .like(StringUtils.isNotBlank(vo.getEmail()), "email", vo.getEmail())
@@ -375,6 +378,23 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         redisService.set(Constant.JWT_REFRESH_TOKEN_BLACKLIST + refreshToken, userId,
                 JwtTokenUtil.getRemainingTime(refreshToken), TimeUnit.MILLISECONDS);
 
+    }
+
+    /**
+     * 获取管理员信息
+     *
+     * @return User
+     */
+    @Override
+    public User getAdminInfo() {
+        User user = userMapper.selectOne(new QueryWrapper<User>()
+                .select("real_name", "nick_name", "avatar", "sex", "phone", "email", "introduction", "signature", "last_login_at")
+                .eq("is_admin", StateEnums.ADMIN.getCode())
+        );
+        if (user == null) {
+            throw new BusinessException(ResponseCode.QUERY_DATA_ERROR);
+        }
+        return user;
     }
 
 }

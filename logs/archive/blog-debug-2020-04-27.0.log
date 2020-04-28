@@ -1,0 +1,7 @@
+2020-04-27 01:04:08.685 DEBUG [main]com.lyq.blog.BlogBackApplication.logStarting:56 -Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-27 01:59:23.114 DEBUG [main]com.lyq.blog.BlogBackApplication.logStarting:56 -Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-27 04:32:24.088 DEBUG [main]com.lyq.blog.BlogBackApplication.logStarting:56 -Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-27 13:05:27.667 DEBUG [main]com.lyq.blog.BlogBackApplication.logStarting:56 -Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-27 15:43:35.614 DEBUG [main]com.lyq.blog.BlogBackApplication.logStarting:56 -Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-27 15:48:07.255 DEBUG [main]com.lyq.blog.BlogBackApplicationTests.logStarting:56 -Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-27 15:48:56.252 DEBUG [main]com.lyq.blog.BlogBackApplication.logStarting:56 -Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE

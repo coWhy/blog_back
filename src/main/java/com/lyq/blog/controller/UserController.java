@@ -208,5 +208,12 @@ public class UserController {
         return result;
     }
 
-
+    @GetMapping("/user/admin/info")
+    @RequiresPermissions("sys:admin:info")
+    public CommonResult<User> getAdminInfo(){
+        CommonResult result = new CommonResult();
+        result.setData(userService.getAdminInfo());
+        result.setMsg(ResponseCode.QUERY_SUCCESS.getMsg());
+        return result;
+    }
 }

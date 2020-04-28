@@ -18,12 +18,14 @@ import javax.validation.constraints.NotNull;
 public class UserUpdateReqVo {
     @NotBlank(message = "用户id不能为空")
     private String userId;
+    @NotBlank(message = "真实姓名不能为空")
+    private String realName;
+    @NotBlank(message = "昵称不能为空")
+    private String nickName;
     @NotBlank(message = "头像不能为空")
     private String avatar;
     @NotNull(message = "性别不能为空")
     private Integer sex;
-    @NotBlank(message = "昵称不能为空")
-    private String nickName;
     @NotBlank(message = "手机号码不能为空")
     private String phone;
     @NotBlank(message = "邮箱地址不能为空")
