@@ -15,8 +15,10 @@ mybatis-plus:
 # jwt密钥
 jwt:
   secretKey: 0007513518f26e45d314d2b1c4fb693e # md5加密密钥
-  accessTokenExpireTime: PT2H # token过期时间  2小时
-  refreshTokenExpireTime: PT8H # 刷新token过期时间 pc 8小时后刷新
+  accessTokenExpireTime: PT1H # token过期时间  1小时
+  refreshTokenExpireTime: PT2H # 刷新token过期时间 pc 4小时后刷新
+#  accessTokenExpireTime: PT2S # token过期时间  2秒
+#  refreshTokenExpireTime: PT4S # 刷新token过期时间 pc 4秒后刷新
   refreshTokenExpireAppTime: PT8H # 刷新token过期时间 app 8小时后刷新
   issuer: fc7ef921303109315fba65e2efe0c549# # md5加密 签发人
 # spring 相关配置

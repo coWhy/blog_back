@@ -29,6 +29,7 @@ public enum ResponseCode implements ResponseCodeInterface {
     RESET_PWD_SUCCESS(0, "重置密码成功"),
     MODIFY_PWD_SUCCESS(0, "修改密码成功"),
     REFRESH_TOKEN_SUCCESS(0, "刷新token成功"),
+    UPLOAD_IMAGE_SUCCESS(0, "文件上传成功"),
 
     SYSTEM_ERROR(5000001, "系统异常请稍后再试"),
 
@@ -67,6 +68,11 @@ public enum ResponseCode implements ResponseCodeInterface {
      */
     ACCOUNT_HAS_BEEN_REGISTERD(2300000, "用户名已存在,请换一个试试"),
     ACCOUNT_OLD_PWD_NOT_CORRECT(2300001, "旧密码不匹配"),
+    /**
+     * 文件上传异常相关处理
+     */
+    UPLOAD_TYPE_NOT_SUPPORTED(2400000, "文件类型不支持"),
+    UPLOAD_FILE_ERROR(2400001, "上传文件失败"),
     ;
 
 
