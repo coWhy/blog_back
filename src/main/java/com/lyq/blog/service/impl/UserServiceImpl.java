@@ -397,4 +397,34 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         return user;
     }
 
+    /**
+     * 更换管理员头像
+     *
+     * @param accessToken 访问token
+     * @param avatar      头像地址
+     */
+    @Override
+    public void changeAdminAvatar(String accessToken, String avatar) {
+        // 先取出更换头像的管理员id
+        String userId = JwtTokenUtil.getUserId(accessToken);
+        if (StringUtils.isBlank(avatar)) {
+            throw new BusinessException(ResponseCode.DATA_INCOMING_ERROR);
+        }
+        // 先查询再更新管理员头像
+        User user = userMapper.selectOne(new QueryWrapper<User>()
+                .select("user_id", "version")
+                .eq("user_id", userId)
+                .eq("is_admin", StateEnums.ADMIN.getCode())
+        );
+        // 如果没有查询到 就返回异常信息 用户未登录
+        if (user == null) {
+            throw new BusinessException(ResponseCode.TOKEN_ERROR);
+        }
+        user.setAvatar(avatar);
+        user.setVersion(user.getVersion());
+        if (!updateById(user)) {
+            throw new BusinessException(ResponseCode.OPERATION_ERROR);
+        }
+    }
+
 }

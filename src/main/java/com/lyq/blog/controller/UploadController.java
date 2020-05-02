@@ -4,10 +4,7 @@ import com.lyq.blog.service.UploadService;
 import com.lyq.blog.utils.result.CommonResult;
 import com.lyq.blog.utils.result.code.ResponseCode;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 /**
@@ -31,6 +28,7 @@ public class UploadController {
     public CommonResult<String> uploadImage(MultipartFile file) {
         CommonResult result = new CommonResult();
         result.setMsg(ResponseCode.UPLOAD_IMAGE_SUCCESS.getMsg());
+        System.err.println(file);
         result.setData(uploadService.uploadImage(file));
         return result;
     }

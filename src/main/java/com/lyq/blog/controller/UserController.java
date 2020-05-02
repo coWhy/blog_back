@@ -3,6 +3,7 @@ package com.lyq.blog.controller;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.lyq.blog.constants.Constant;
 import com.lyq.blog.entity.User;
+import com.lyq.blog.service.RedisService;
 import com.lyq.blog.service.UserService;
 import com.lyq.blog.utils.result.CommonResult;
 import com.lyq.blog.utils.result.code.ResponseCode;
@@ -26,6 +27,7 @@ import java.util.List;
 public class UserController {
     @Autowired
     private UserService userService;
+
 
     /**
      * 登录接口
@@ -59,12 +61,12 @@ public class UserController {
      * @return CommonResult<Object>
      */
     @GetMapping("/user/logout")
-    public CommonResult<Object> logout(HttpServletRequest req) {
+    public CommonResult<Object> logout(HttpServletRequest request) {
         // 用户退出登录之后 前端将从本地缓存 或者 cookie中拿出
         // 登录时候存入的两个token：accessToken 和 refreshToken 在前端发送异步请求的 时候 将两个token放入header中
         // 这样后端方便拿取这两个token
-        String accessToken = req.getHeader(Constant.ACCESS_TOKEN);
-        String refreshToken = req.getHeader(Constant.REFRESH_TOKEN);
+        String accessToken = request.getHeader(Constant.ACCESS_TOKEN);
+        String refreshToken = request.getHeader(Constant.REFRESH_TOKEN);
         userService.logout(accessToken, refreshToken);
         CommonResult result = new CommonResult();
         result.setMsg(ResponseCode.LOGOUT_SUCCESS.getMsg());
@@ -152,9 +154,9 @@ public class UserController {
      * @return CommonResult<String>
      */
     @GetMapping("/user/token")
-    public CommonResult<String> refreshToken(HttpServletRequest req) {
+    public CommonResult<String> refreshToken(HttpServletRequest request) {
         // 从前端的header中拿出 过期时间长的refreshToken 这样做 是因为有可能前端的accessToken已经过期了 而刷新token的时间略长
-        String refreshToken = req.getHeader(Constant.REFRESH_TOKEN);
+        String refreshToken = request.getHeader(Constant.REFRESH_TOKEN);
         CommonResult result = new CommonResult();
         result.setData(userService.refreshToken(refreshToken));
         result.setMsg(ResponseCode.REFRESH_TOKEN_SUCCESS.getMsg());
@@ -198,22 +200,44 @@ public class UserController {
      * @return CommonResult<Object>
      */
     @PutMapping("/user/resetpwd")
-    public CommonResult<Object> userResetPwd(@RequestBody @Valid UserResetPwdReqVo vo, HttpServletRequest req) {
+    public CommonResult<Object> userResetPwd(@RequestBody @Valid UserResetPwdReqVo vo, HttpServletRequest request) {
         // 由于更新个密码 是敏感操作 所以 需要重新刷新所有token 刷新 办法 就是引导重新登录 将过去的token拉入redis黑名单
-        String accessToken = req.getHeader(Constant.ACCESS_TOKEN);
-        String refreshToken = req.getHeader(Constant.REFRESH_TOKEN);
+        String accessToken = request.getHeader(Constant.ACCESS_TOKEN);
+        String refreshToken = request.getHeader(Constant.REFRESH_TOKEN);
         userService.userResetPwd(vo, accessToken, refreshToken);
         CommonResult result = new CommonResult();
         result.setMsg(ResponseCode.RESET_PWD_SUCCESS.getMsg());
         return result;
     }
 
-    @GetMapping("/user/admin/info")
+    /**
+     * 获取 管理员信息接口
+     *
+     * @return CommonResult<User>
+     */
+    @GetMapping("/admin/info")
     @RequiresPermissions("sys:admin:info")
-    public CommonResult<User> getAdminInfo(){
+    public CommonResult<User> getAdminInfo() {
         CommonResult result = new CommonResult();
         result.setData(userService.getAdminInfo());
         result.setMsg(ResponseCode.QUERY_SUCCESS.getMsg());
+        return result;
+    }
+
+    /**
+     * 更换管理员头像接口
+     *
+     * @param avatar  头像地址
+     * @param request HttpServletRequest
+     * @return CommonResult<Object>
+     */
+    @PostMapping("/admin/avatar")
+    @RequiresPermissions("sys:admin:avatar")
+    public CommonResult<Object> changeAdminAvatar(@RequestBody String avatar, HttpServletRequest request) {
+        String accessToken = request.getHeader(Constant.ACCESS_TOKEN);
+        userService.changeAdminAvatar(accessToken, avatar);
+        CommonResult result = new CommonResult();
+        result.setMsg(ResponseCode.UPDATE_SUCCESS.getMsg());
         return result;
     }
 }

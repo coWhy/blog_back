@@ -102,7 +102,16 @@ public interface UserService extends IService<User> {
 
     /**
      * 获取管理员信息
+     *
      * @return User
      */
     User getAdminInfo();
+
+    /**
+     * 更换管理员头像
+     *
+     * @param accessToken 访问token
+     * @param avatar      头像地址
+     */
+    void changeAdminAvatar(String accessToken, String avatar);
 }
