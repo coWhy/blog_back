@@ -114,4 +114,12 @@ public interface UserService extends IService<User> {
      * @param avatar      头像地址
      */
     void changeAdminAvatar(String accessToken, String avatar);
+
+    /**
+     * 更新管理员个人信息接口
+     *
+     * @param accessToken 访问token
+     * @param vo          AdminUpdateVo
+     */
+    void updateAdminInfo(String accessToken, AdminUpdateVo vo);
 }

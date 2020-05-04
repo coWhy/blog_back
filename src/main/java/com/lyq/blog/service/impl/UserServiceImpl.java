@@ -405,24 +405,47 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
      */
     @Override
     public void changeAdminAvatar(String accessToken, String avatar) {
-        // 先取出更换头像的管理员id
-        String userId = JwtTokenUtil.getUserId(accessToken);
         if (StringUtils.isBlank(avatar)) {
             throw new BusinessException(ResponseCode.DATA_INCOMING_ERROR);
         }
-        // 先查询再更新管理员头像
-        User user = userMapper.selectOne(new QueryWrapper<User>()
+        // 先查询再更新管理员头像  这里为了更加安全 所以 加上is_admin
+        User admin = userMapper.selectOne(new QueryWrapper<User>()
                 .select("user_id", "version")
-                .eq("user_id", userId)
+                .eq("user_id", JwtTokenUtil.getUserId(accessToken))
                 .eq("is_admin", StateEnums.ADMIN.getCode())
         );
         // 如果没有查询到 就返回异常信息 用户未登录
-        if (user == null) {
+        if (admin == null) {
             throw new BusinessException(ResponseCode.TOKEN_ERROR);
         }
-        user.setAvatar(avatar);
-        user.setVersion(user.getVersion());
-        if (!updateById(user)) {
+        admin.setAvatar(avatar);
+        admin.setVersion(admin.getVersion());
+        if (!updateById(admin)) {
+            throw new BusinessException(ResponseCode.OPERATION_ERROR);
+        }
+    }
+
+    /**
+     * 更新管理员个人信息接口
+     *
+     * @param accessToken 访问token
+     * @param vo          AdminUpdateVo
+     */
+    @Override
+    public void updateAdminInfo(String accessToken, AdminUpdateVo vo) {
+        // 先查询再更新管理员信息 这里为了更加安全 所以 加上is_admin
+        User admin = userMapper.selectOne(new QueryWrapper<User>()
+                .select("user_id", "version")
+                .eq("user_id", JwtTokenUtil.getUserId(accessToken))
+                .eq("is_admin", StateEnums.ADMIN.getCode())
+        );
+        // 如果没有查询到 就返回异常信息 用户未登录
+        if (admin == null) {
+            throw new BusinessException(ResponseCode.TOKEN_ERROR);
+        }
+        BeanUtils.copyProperties(vo, admin);
+        admin.setVersion(admin.getVersion());
+        if (!updateById(admin)) {
             throw new BusinessException(ResponseCode.OPERATION_ERROR);
         }
     }

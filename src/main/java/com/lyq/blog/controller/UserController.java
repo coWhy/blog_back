@@ -3,7 +3,6 @@ package com.lyq.blog.controller;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.lyq.blog.constants.Constant;
 import com.lyq.blog.entity.User;
-import com.lyq.blog.service.RedisService;
 import com.lyq.blog.service.UserService;
 import com.lyq.blog.utils.result.CommonResult;
 import com.lyq.blog.utils.result.code.ResponseCode;
@@ -216,7 +215,7 @@ public class UserController {
      * @return CommonResult<User>
      */
     @GetMapping("/admin/info")
-    @RequiresPermissions("sys:admin:info")
+    @RequiresPermissions("sys:admin:get:info")
     public CommonResult<User> getAdminInfo() {
         CommonResult result = new CommonResult();
         result.setData(userService.getAdminInfo());
@@ -236,6 +235,23 @@ public class UserController {
     public CommonResult<Object> changeAdminAvatar(@RequestBody String avatar, HttpServletRequest request) {
         String accessToken = request.getHeader(Constant.ACCESS_TOKEN);
         userService.changeAdminAvatar(accessToken, avatar);
+        CommonResult result = new CommonResult();
+        result.setMsg(ResponseCode.UPDATE_SUCCESS.getMsg());
+        return result;
+    }
+
+    /**
+     * 更新管理员个人信息接口
+     *
+     * @param vo      AdminUpdateVo
+     * @param request HttpServletRequest
+     * @return CommonResult<Object>
+     */
+    @PostMapping("/admin/info")
+    @RequiresPermissions("sys:admin:update:info")
+    public CommonResult<Object> updateAdminInfo(@RequestBody @Valid AdminUpdateVo vo, HttpServletRequest request) {
+        String accessToken = request.getHeader(Constant.ACCESS_TOKEN);
+        userService.updateAdminInfo(accessToken, vo);
         CommonResult result = new CommonResult();
         result.setMsg(ResponseCode.UPDATE_SUCCESS.getMsg());
         return result;
